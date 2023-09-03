@@ -1,5 +1,6 @@
 ---
-sidebar_position: 0
+sidebar_position: 1
+draft: true
 ---
 
 # PAYDAY 2 > PAYDAY 3 Cheatsheet/Differences

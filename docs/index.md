@@ -27,7 +27,7 @@ Explain mod installation process.
 Intro for mod developers, [link to separate page](#).
 
 ### PAYDAY 2 > PAYDAY 3 Cheatsheet/Differences
-Many things have changed since PAYDAY 2, to view some big changes that will affect PAYDAY 2 mappers, view the [PAYDAY 2 > PAYDAY 3 Cheatsheet/Differences](/docs/getting-started/payday2-payday3-cheatsheet) page.
+Many things have changed since PAYDAY 2, to view some big changes that will affect PAYDAY 2 mappers, view the [PAYDAY 2 > PAYDAY 3 Cheatsheet/Differences](#) page.
 
 ## Contributing
 Explain where people can go to contribute to the modding toolchain and documentation.

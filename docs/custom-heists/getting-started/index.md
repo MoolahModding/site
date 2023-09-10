@@ -20,7 +20,7 @@ The first thing you need to do is setup the map's world settings,
 you can do this by opening the World Settings window with the map open in the editor.
 The World Settings window looks like this:
 
-![SBZWorldSettings](world-settings.png)
+![SBZWorldSettings](assets/world-settings.png)
 
 The settings in this window can be left largely untouched,
 but if your map needs the player to start with their mask, then you can disable the "Start in Casing" option.

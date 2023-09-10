@@ -32,7 +32,7 @@ so you must cook your game files everytime you want to package and test your mod
 You can cook your game files by opening the `File` menu and clicking `Cook Content for Windows`.
 Once cooked, your files will be located at `{UE4ProjectDir}/Saved/Cooked/WindowsNoEditor/`.
 
-![UE4 Cook](ue4-cookoption.png)
+![UE4 Cook](assets/ue4-cookoption.png)
 
 ### Packaging
 When packaging your game files, you must be incredibly careful not to package any dummy assets used by the modkit.

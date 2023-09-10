@@ -15,9 +15,9 @@ draft: true
 | PAYDAY 2             | PAYDAY 3                                                       | Notes                                                                          |
 |:---------------------|:---------------------------------------------------------------|:-------------------------------------------------------------------------------|
 | AreaTrigger          | SBZPlayerTriggerVolume                                         |                                                                                |
-| DifficultyLevelCheck | ![Difficulty Level Check PD3](difficultylevelcheck.png)        | Equivalent to this blueprint code                                              |
+| DifficultyLevelCheck | ![Difficulty Level Check PD3](assets/difficultylevelcheck.png)        | Equivalent to this blueprint code                                              |
 | LootBag              | SBZBagSpawner                                                  |                                                                                |
-| MissionEnd           | ![Request Mission End](gamestatemachine-requestmissionend.png) | Equivalent to this blueprint code                                              |
+| MissionEnd           | ![Request Mission End](assets/gamestatemachine-requestmissionend.png) | Equivalent to this blueprint code                                              |
 | Objective            | SBZObjective                                                   | See [Objectives](/custom-heists/objectives)                                    |
 | PlayerSpawner        | PlayerStart + SBZPlayerStartGroup                              | Use as actors in level                                                         |
 | Timer                | Delay                                                          | Function in blueprint                                                          |

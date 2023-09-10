@@ -28,7 +28,7 @@ PAYDAY 3 requires all of it's files to be cooked, so you must cook your game fil
 
 You can cook your game files by opening the `File` menu and clicking `Cook Content for Windows`. Once cooked, your files will be located at `{UE4ProjectDir}/Saved/Cooked/WindowsNoEditor/`.
 
-![UE4 Cook](./ue4-cookoption.png)
+![UE4 Cook](ue4-cookoption.png)
 
 ### Packaging
 When packaging your game files, you must be incredibly careful not to package any dummy assets used by the modkit. If you package any dummy assets, the game could crash.

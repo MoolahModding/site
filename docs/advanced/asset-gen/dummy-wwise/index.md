@@ -16,4 +16,4 @@ To make a dummy `AkAudioEvent`, do the following:
 1. Right-click on the content browser and select `Media` and choose `AkAudioEvent`
 2. Name your dummy asset and it's done.
 
-![AkAudioEvent in UE4 Editor](./media-content-browser.png)
+![AkAudioEvent in UE4 Editor](media-content-browser.png)

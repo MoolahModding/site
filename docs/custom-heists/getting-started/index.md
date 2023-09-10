@@ -12,7 +12,7 @@ In order to begin with mapping, you must first get accustomed to Unreal Engine's
 Once you've created your map, you'll need to set it up for use in PAYDAY 3. The first thing you need to do is setup the map's world settings, you can do this by opening the World Settings window with the map open in the editor. The World Settings window looks like this:
 
 
-![SBZWorldSettings](./world-settings.png)
+![SBZWorldSettings](world-settings.png)
 
 The settings in this window can be left largely untouched, but if your map needs the player to start with their mask you then you can disable the "Start in Casing" option. If your map also requires a sound track through Wwise, like the game's default sounds tracks, then you'll need to set the "Music Event" option to the heist track you'd prefer to use for your level. If you don't set the music event, then the map will have no background music.
 

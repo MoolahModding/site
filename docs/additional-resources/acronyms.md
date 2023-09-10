@@ -12,6 +12,8 @@ Below is a list of prefixes commonly used by the game and Unreal Engine games in
 This table is incomplete. If you find more prefixes, you can contribute them by clicking "Edit this page" at the bottom of this page.
 :::
 
+<!-- When adding to these tables, make sure to keep the alphabetical order of the first column -->
+
 ### Engine Types
 | Prefix | Asset Type               |
 |:-------|:-------------------------|

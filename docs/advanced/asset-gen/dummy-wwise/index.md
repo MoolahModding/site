@@ -10,7 +10,7 @@ Support for dummying Wwise assets is provided by the `DummyFactories` plugin, di
 :::
 
 ## AkAudioEvent
-AkAudioEvents are only really used for heist soundtracks, so there's a high likelyhood you won't need to make one as someone would have already made one.
+AkAudioEvents are only really used for heist soundtracks, so there's a high likelihood you won't need to make one as someone would have already made one.
 
 To make a dummy `AkAudioEvent`, do the following:
 1. Right-click on the content browser and select `Media` and choose `AkAudioEvent`

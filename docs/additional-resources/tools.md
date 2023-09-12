@@ -24,9 +24,20 @@ it is by far the hardest to work with for mod developers.
 The command line interface is unintuitive, not well-documented,
 and AES encryption keys must be specially formatted into a configuration file.
 
+## Inspecting cooked assets
 ### FModel
-[FModel](https://github.com/4sval/FModel) is a very powerful interactive Pak viewer.
+[FModel](https://fmodel.app/) is a very powerful interactive Pak viewer.
 It allows viewing most assets serialized as JSON, as well as playing back audio and viewing textures and models.
+
+### UAssetGUI
+[UAssetGUI](https://github.com/atenfyr/UAssetGUI) is a tool to view **and edit** cooked assets.
+Compared to FModel, the GUI is usually easier to read than the raw JSON output of FModel.
+Unlike FModel, properties can be edited, and the asset can be re-exported to a cooked asset.
+
+### Stove
+[Stove](https://github.com/bananaturtlesandwich/stove) is an editor for cooked Unreal Engine maps.
+It allows viewing where actors are positioned in the map and viewing their properties.
+It also has the ability to transform (move, rotate) actors and to transplant actors from one map to another.
 
 ## Working with cooked Blueprint code (aka Kismet)
 ### kismet-analyzer _by truman_

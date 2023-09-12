@@ -31,6 +31,9 @@ const config = {
           editUrl: 'https://github.com/MoolahModding/site/tree/main/',
         },
         blog: false,
+        theme: {
+          customCss: require.resolve('./src/css/custom.css'),
+        },
       }),
     ],
   ],
@@ -56,6 +59,7 @@ const config = {
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
+        additionalLanguages: ['csharp']
       },
       colorMode: {
         respectPrefersColorScheme: true,

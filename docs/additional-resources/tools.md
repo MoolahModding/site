@@ -1,9 +1,14 @@
 ---
 sidebar_position: 1
+draft: true
 ---
 
 # Tools
-https://github.com/Buckminsterfullerene02/UE-Modding-Tools
+:::info
+The list below is curated to contain only tools which are most used and relevant to PAYDAY 3.
+For a more exhaustive list of Unreal Engine modding tools,
+see [Buckminsterfullerene's repository](https://github.com/Buckminsterfullerene02/UE-Modding-Tools).
+:::
 
 ## Working with Pak files
 ### Repak _by truman_

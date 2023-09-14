@@ -31,6 +31,9 @@ const config = {
           editUrl: 'https://github.com/MoolahModding/site/tree/main/',
         },
         blog: false,
+        theme: {
+          customCss: require.resolve('./src/css/custom.css'),
+        },
       }),
     ],
   ],
@@ -44,8 +47,9 @@ const config = {
         items: [
           {
             href: 'https://github.com/MoolahModding',
-            label: 'GitHub',
             position: 'right',
+            className: 'header-github-link',
+            'aria-label': 'GitHub organization ',
           },
         ],
       },
@@ -56,6 +60,7 @@ const config = {
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
+        additionalLanguages: ['csharp']
       },
       colorMode: {
         respectPrefersColorScheme: true,

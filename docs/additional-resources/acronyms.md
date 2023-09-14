@@ -1,9 +1,22 @@
 ---
-sidebar_position: 1
+sidebar_position: 2
 draft: true
 ---
 
 # Acronyms
+## Community Acronyms
+### MML
+Moolah Mod Launcher, a community made mod installer and game launcher.
+
+### UE4SS
+[Unreal Engine 4/5 Scripting System](https://docs.ue4ss.com/),
+a tool to view properties and script at runtime through Unreal Engine's reflection system.
+
+### CAS
+Cooked Asset Serializer,
+also known as [UEAssetToolkitGenerator](https://github.com/LongerWarrior/UEAssetToolkitGenerator).
+More information is available in the [Asset Generation](/advanced/asset-gen) documentation.
+
 ## Asset prefixes
 Most assets in the game have their file names prefixed with a short identifier, to be able to easily recognize the asset type.
 Below is a list of prefixes commonly used by the game and Unreal Engine games in general.

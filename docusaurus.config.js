@@ -10,7 +10,7 @@ const config = {
   favicon: 'img/favicon.ico',
 
   url: 'https://moolah.dev',
-  baseUrl: '/',
+  baseUrl: '/docs/',
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',

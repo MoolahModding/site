@@ -73,13 +73,20 @@ Finally, run these in order:
 3. Serialize Assets, this might take a while depending on your system specs
 
 ## Generating Editor Assets
+:::info
+Additional information on this tool can be found on the [UEAssetToolkit Wiki](https://github.com/LongerWarrior/UEAssetToolkitGenerator/wiki).
+:::
+
 ### Installing the Asset Generator editor plugin
-<!-- TODO -->
+Download [UEAssetToolkit](https://github.com/Buckminsterfullerene02/UEAssetToolkit-Fixes)
+by cloning it or downloading it as a zip file.
+Then move the `AssetGenerator` and `AssetDumper` directories to your project's `Plugins` directory.
+If your editor is already open, you will have to restart to compile and load the plugin.
 
 ### Generating Assets
-<!-- TODO -->
+Go to `Windows -> Developer Tools -> Asset Generator`.
 
-### Textures
+#### Textures
 To import textures into the editor, you will want to use the command line.
 Running the Asset Generator from the editor for these two asset types is too unstable.
 
@@ -93,3 +100,8 @@ If you encounter this issue, you can manually increase the Windows page size.
 
 After the command has run to completion, it is recommended to start the Unreal Editor
 to check if everything is in the right place and to let shaders compile.
+
+#### Models and Animations
+You can either generate dummy meshes and animations,
+or follow the instructions on the [Models and Animations](models) page
+to generate fully functional assets.

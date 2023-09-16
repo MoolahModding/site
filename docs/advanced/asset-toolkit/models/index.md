@@ -136,6 +136,10 @@ From the sidebar, select the `PSK2FBX` tab.
    - the PSA Folder `Anims`
    - the Skeleton Folder set to `SKs/Blender`
 
+:::caution
+Generating animations has not yet been tested.
+:::
+
 ## Moving the FBX
 Now we need to copy **only** the FBX files to the directory UEAssetToolkitGenerator will output serialized assets to.
 To do this correctly, you can use the [copy_fbx_to_cas.py](https://gist.github.com/florensie/eff2c6e5e3ae7b238832343bf8a2a091) Python script.
@@ -149,7 +153,6 @@ The first argument is the directory containing the `Anims`, `SMs` and `SKMs` sub
 The second argument is the `Result Dir` you have set in CAS.
 
 ## Serializing for import
-
 Open the UEAssetToolkitGenerator, and check your settings:
 - AnimSequence, AnimMontage, SkeletalMesh, Skeleton and StaticMesh should **not** be selected under `Asset Types to Skip Serializing`
 - All checkboxes under `Use ActorX?` should be disabled
@@ -160,7 +163,6 @@ If this is your first time using Cooked Asset Serializer,
 refer back to the instructions on the main [Asset Toolkit](..) documentation page.
 
 ## Importing into the editor
-<!-- TODO: guide to downloading and adding AssetGenerator plugin to project -->
 
 :::tip Source Control
 If you publish the sources of your project as a git repository, you will want to exclude the generated assets.
@@ -182,10 +184,16 @@ UE4Editor-Cmd.exe "C:\path\to\project\PAYDAY3.uproject" -run=AssetGenerator -Dum
 
 ### Static Meshes
 In your editor, navigate to `Window -> Developer Tools -> Asset Generator`.
-Generating static meshes suffers from video memory leaks, . 
+Generating static meshes suffers from video memory leaks,
+so you will want to do this in multiple passes.
+The `environment` directory is the largest, so start by generating everything except that.
+Restart the editor after each run to clear your video memory.
 
 ### Skeletal Meshes
-<!-- TODO -->
+Repeat the process above for skeletal meshes.
+These meshes include characters, vehicles and weapons.
 
 ### Animations
-<!-- TODO -->
+:::caution
+Generating animations has not yet been tested. 
+:::

@@ -1,6 +1,5 @@
 ---
 sidebar_position: 1
-draft: true
 ---
 
 # Asset Toolkit

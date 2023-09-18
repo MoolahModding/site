@@ -1,6 +1,5 @@
 ---
 sidebar_position: 3
-draft: true
 ---
 
 # PAYDAY 2 to PAYDAY 3 Cheatsheet

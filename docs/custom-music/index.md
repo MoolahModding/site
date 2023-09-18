@@ -54,12 +54,12 @@ section of this guide
 
 ### Using wwise_pd3
 :::note
-At the moment, wwise_pd3 does not support voice lines.
+At the moment, voice line support for wwise_pd3 is untested.
 :::
 
 1. Open a command prompt window in the folder your
 WAV files are in.
-2. Use the command `wwise_pd3 -encode sfx input.wav output.wem`
+2. Use the command `wwise_pd3 -encode input.wav output.wem`
 3. Your WEM file will be located where you specified the output file to go
 4. You can now continue to the [Adding your converted files to PAYDAY 3](#adding-your-converted-files-to-payday-3)
 section of this guide

@@ -5,6 +5,10 @@ draft: true
 
 # PAYDAY 2 > PAYDAY 3 Cheatsheet/Differences
 
+:::note
+This list is incomplete
+:::
+
 | PAYDAY 2         | PAYDAY 3   | Notes                                                                                                   |
 |:-----------------|:-----------|:--------------------------------------------------------------------------------------------------------|
 | Continents       | Levels     | See [UE4's docs for more details](https://docs.unrealengine.com/4.27/en-US/Basics/Levels/LevelsWindow/) |

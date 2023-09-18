@@ -22,6 +22,10 @@ You can also get this information in more detail from [the json schema](/files/s
 - **icon:** the path to an icon, formats other than png and jpg might not be supported by the launcher
 - **authors:** a list of the primary authors of the mod
 - **contributors:** a list of additional contributors to the mod, testers and translators for example
+- **contact**: contact information for the mod itself, such as the homepage and issues links
+- **license**: the license the mod is distributed under,
+  if possible, use an identifier from the [SPDX License List](https://spdx.org/licenses)
+- **custom**: a map of custom metadata
 
 ## Dependencies
 The dependencies objects are a map where the keys are mod ids and the values are NPM style [semver ranges](https://devhints.io/semver), for example `1.2.3`, `1.x.x`, `1.2.3-2.3.4` and `*`

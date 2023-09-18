@@ -64,7 +64,12 @@ const config = {
       },
       colorMode: {
         respectPrefersColorScheme: true,
-      }
+      },
+      algolia: {
+        appId: 'M5RMK2P4A8',
+        apiKey: 'b96dd23c4efe7d339319b0ef12da7ec3',
+        indexName: 'moolah',
+      },
     }),
 };
 

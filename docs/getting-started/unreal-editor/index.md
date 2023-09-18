@@ -25,6 +25,9 @@ Not using the PAYDAY3 modkit is unsupported and not recommended as you do not ha
 ### Setting up PAYDAY 3 to allow your PAK to be loaded
 As of writing, PAYDAY 3 will check if your PAK file has a generated signature, this can be bypassed by passing `-fileopenlog` to PAYDAY 3 when it launches.
 
+You can set this easily by putting the launch option in the steam launch options
+![Steam Launch Options](assets/steam-launchoptions.png)
+
 ### Cooking
 PAYDAY 3 requires all of its files to be cooked,
 so you must cook your game files everytime you want to package and test your mod.

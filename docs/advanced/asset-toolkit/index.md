@@ -25,7 +25,7 @@ you can download it and add it to your PATH or place it in the Paks directory.
 
 ```shell
 cd C:\Program Files (x86)\Steam\steamapps\common\PAYDAY 3 Playtest\PAYDAY3\Content\Paks
-for %f in (*.pak) do @(repak.exe --aes-key 0xABCDEF12345789 unpack --force "%f" out)
+repak.exe --aes-key 0xABCDEF12345789 unpack --output out *.pak
 ```
 
 The AES encryption key is not shared publicly at this time,
@@ -84,6 +84,10 @@ Then move the `AssetGenerator` and `AssetDumper` directories to your project's `
 If your editor is already open, you will have to restart to compile and load the plugin.
 
 ### Generating Assets
+:::caution
+These instructions are incomplete.
+:::
+
 Go to `Windows -> Developer Tools -> Asset Generator`.
 
 #### Textures

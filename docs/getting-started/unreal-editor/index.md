@@ -20,10 +20,11 @@ If you do not wish to use the PAYDAY3 modkit, you must make sure your project is
 Not using the PAYDAY3 modkit is unsupported and not recommended as you do not have access to PAYDAY3's data formats.
 :::
 
-## Packaging your mod's files for use in PAYDAY 3
+## Testing your mod
 
 ### Setting up PAYDAY 3 to allow your PAK to be loaded
-As of writing, PAYDAY 3 will check if your PAK file has a generated signature, this can be bypassed by passing `-fileopenlog` to PAYDAY 3 when it launches.
+As of writing, PAYDAY 3 will check if your PAK file has a generated signature,
+this can be bypassed by passing `-fileopenlog` to PAYDAY 3 when it launches.
 
 You can set this easily by putting the launch option in the steam launch options
 ![Steam Launch Options](assets/steam-launchoptions.png)
@@ -39,17 +40,23 @@ Once cooked, your files will be located at `{UE4ProjectDir}/Saved/Cooked/Windows
 
 ### Packaging
 When packaging your game files, you must be incredibly careful not to package any dummy assets used by the modkit.
-If you package any dummy assets, the game could crash.
-In order to package your game files, you must make sure you have cooked your files first, you can see how to do that [here](#cooking).
+If you package any dummy assets, the game could crash or create other obscure issues.
+In order to package your game files, you must make sure you have [cooked](#cooking) your files first.
+
 Once cooked, you must copy out all the files your mod replaces or adds, like maps, models, textures, etc.
-When copying you must make sure the folder structure stays the same,
-so any map at `{UE4ProjectDir}/Saved/Cooked/WindowsNoEditor/PAYDAY3/Maps/CoolMap/CoolMap.umap` will be copied
-to `{PackagingStagingFolder}/PAYDAY3/Maps/CoolMap/CoolMap.umap`.
+When copying you must make sure the folder structure stays the same.
+For example, a custom map at `{UE4ProjectDir}/Saved/Cooked/WindowsNoEditor/PAYDAY3/Maps/CoolMap/CoolMap.umap`
+should be copied to `{PackagingStagingFolder}/PAYDAY3/Maps/CoolMap/CoolMap.umap`.
 
 Once all your files are copied, you must now package the `PackageStagingFolder` with the tool of your choice.
 The tool you use is up to personal preference, but the recommended tool is [repak by trumank](https://github.com/trumank/repak)
 
 Once packaged, place your pak files in `{InstallFolder}/PAYDAY3/Content/Paks/` and your mod should be loaded by PAYDAY 3.
+
+:::info Packaging for use with the launcher
+It's highly recommended to create a `pd3mod` before you upload your mod for users to install.
+See the documentation on [Packaging](../packaging) for more info.
+:::
 
 ## Load Order
 Unreal Engine loads files in PAKs in alphabetical order, so if you want your mod to load after another mod,
@@ -57,5 +64,6 @@ you must make sure your mod's name comes after the other mod's name alphabetical
 It is best to prefix your mod's name with the letter `z`, ensuring it will load last and overwrite any file you need it to.
 
 ## Viewing PAYDAY 3's PAK files
-In order to view PAYDAY 3's PAK files, you must first obtain the AES key. While we cannot distribute the AES key ourselves, you can dump it very easily.
+In order to view PAYDAY 3's PAK files, you must first obtain the AES key.
+While we cannot distribute the AES key ourselves, you can dump it very easily.
 Once the AES key is obtained, you can open PAYDAY 3's files in the program of your choice such as [FModel](https://github.com/4sval/FModel/releases).

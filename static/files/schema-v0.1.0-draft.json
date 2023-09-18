@@ -97,6 +97,11 @@
       "pattern": "^(0|[1-9]\\d*)\\.(0|[1-9]\\d*)\\.(0|[1-9]\\d*)(?:-((?:0|[1-9]\\d*|\\d*[a-zA-Z-][0-9a-zA-Z-]*)(?:\\.(?:0|[1-9]\\d*|\\d*[a-zA-Z-][0-9a-zA-Z-]*))*))?(?:\\+([0-9a-zA-Z-]+(?:\\.[0-9a-zA-Z-]+)*))?$",
       "description": "The mod version"
     },
+    "schemaVersion": {
+      "type": "integer",
+      "description": "The version of the pd3mod.json schema",
+      "const": 1
+    },
     "name": {
       "type": "string",
       "description": "Name of the mod"
@@ -113,6 +118,71 @@
         "server"
       ],
       "description": "The environment where this mod will be loaded"
+    },
+    "updateProvider": {
+      "type": "object",
+      "oneOf": [
+        {
+          "properties": {
+            "type": {
+              "type": "string",
+              "enum": ["githubReleases"]
+            },
+            "repository": {
+              "type": "string",
+              "description": "URL to a GitHub repository, can be shortened to just the slug (e.g. user/repository)"
+            }
+          },
+          "description": "Update provider using the GitHub releases API",
+          "required": ["type", "repository"]
+        },
+        {
+          "properties": {
+            "type": {
+              "type": "string",
+              "enum": ["gitlabReleases"]
+            },
+            "repository": {
+              "type": "string",
+              "description": "URL to a GitLab repository, can be shortened to just the slug (e.g. user/repository)"
+            },
+            "url": {
+              "type": "string",
+              "format": "uri"
+            }
+          },
+          "description": "Update provider using the GitLab releases API",
+          "required": ["type", "repository"]
+        },
+        {
+          "properties": {
+            "type": {
+              "type": "string",
+              "enum": ["modworkshop"]
+            },
+            "id": {
+              "type": "integer",
+              "minimum": 1
+            }
+          },
+          "description": "Update provider using the ModWorkShop API",
+          "required": ["type", "id"]
+        },
+        {
+          "properties": {
+            "type": {
+              "type": "string",
+              "enum": ["custom"]
+            },
+            "metadataUrl": {
+              "type": "string",
+              "format": "uri"
+            }
+          },
+          "description": "Update provider using a URL to a separate metadata file",
+          "required": ["type", "metadataUrl"]
+        }
+      ]
     },
     "depends": {
       "type": "object",
@@ -208,6 +278,7 @@
   "required": [
     "id",
     "version",
+    "schemaVersion",
     "environment"
   ]
 }

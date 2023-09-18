@@ -18,12 +18,12 @@ This guide is based on the [Generating FBX](https://github.com/LongerWarrior/UEA
 If you get stuck or need help, please check there first for the most up-to-date information.
 :::
 
-:::danger
-You cannot legally distribute the assets obtained by following this guide.
+:::danger Distribution
+You cannot legally distribute the assets obtained by following this guide without explicit permission from Starbreeze.
 :::
 
 :::note
-This guide assumes you have already created an [Unreal Editor project](#).
+This guide assumes you have already completed some or all of the steps for [generating assets](..).
 :::
 
 ## Extracting ActorX files

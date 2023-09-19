@@ -42,6 +42,8 @@ It also has the ability to transform (move, rotate) actors and to transplant act
 ### kismet-analyzer _by truman_
 [kismet-analyzer](https://github.com/trumank/kismet-analyzer) is a command line toolkit to help analyze and manipulate assets containing Kismet functions.
 
+For your convenience, the [control flow graphs](/kismet) generated using this tool are available on this website.
+
 ### kismet-debugger _by truman_
 [kismet-debugger](https://github.com/trumank/kismet-debugger) is an extension for UE4SS which allows you to interactively step through Blueprint functions.
 :::caution

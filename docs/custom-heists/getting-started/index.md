@@ -34,5 +34,5 @@ You'll also need to set the `Level Path` property to the map you've made.
 This is also a good time to give your map a name and description that will display in-game.
 
 :::tip
-Learn how to make a `PD3HeistDataAsset` on [the Data Assets page](/getting-started/data-assets)
+Learn how to make a `PD3HeistDataAsset` on [the Data Assets page](/docs/getting-started/data-assets)
 :::

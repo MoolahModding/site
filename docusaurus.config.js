@@ -10,7 +10,7 @@ const config = {
   favicon: 'img/favicon.ico',
 
   url: 'https://moolah.dev',
-  baseUrl: '/docs/',
+  baseUrl: '/',
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -26,7 +26,7 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          routeBasePath: '/',
+          routeBasePath: '/docs',
           sidebarPath: require.resolve('./sidebars.js'),
           editUrl: 'https://github.com/MoolahModding/site/tree/main/',
         },

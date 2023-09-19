@@ -13,7 +13,7 @@ Start by creating a directory with the name and version of your mod. For example
 
 Next, create a file called `pd3mod.json` inside.
 This file contains metadata about your mod, such as a unique identifier, version, name and description.
-To see all available fields and their types, see the page on [pd3mod.json](/additional-resources/pd3mod-json) or the [json schema](/files/schema-v0.1.0-draft.json).
+To see all available fields and their types, see the page on [pd3mod.json](/docs/additional-resources/pd3mod-json) or the [json schema](/files/schema-v0.1.0-draft.json).
 
 :::info Why pd3mod?
 Those familiar with Unreal Engine modding know that mods usually come packaged as a `.pak` file.

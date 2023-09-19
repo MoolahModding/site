@@ -27,7 +27,7 @@ This documentation will guide you through two ways of modding:
 
 ### Returning Modders
 Many things have changed since PAYDAY 2, to view some big changes that will affect PAYDAY 2 mappers,
-view the [PAYDAY 2 to PAYDAY 3 Cheatsheet](/additional-resources/payday2-payday3-cheatsheet) page.
+view the [PAYDAY 2 to PAYDAY 3 Cheatsheet](/docs/additional-resources/payday2-payday3-cheatsheet) page.
 
 ## Contributing
 Explain where people can go to contribute to the modding toolchain and documentation.

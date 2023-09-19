@@ -14,7 +14,7 @@ a tool to view properties and script at runtime through Unreal Engine's reflecti
 ### CAS
 Cooked Asset Serializer,
 also known as [UEAssetToolkitGenerator](https://github.com/LongerWarrior/UEAssetToolkitGenerator).
-More information is available in the [Asset Generation](/advanced/asset-toolkit) documentation.
+More information is available in the [Asset Generation](/docs/advanced/asset-toolkit) documentation.
 
 ## Asset prefixes
 Most assets in the game have their file names prefixed with a short identifier, to be able to easily recognize the asset type.

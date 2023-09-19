@@ -29,4 +29,4 @@ You can optionally download UE4SS if you wish to create lua mods,
 or to provide extra runtime debugging tools.
 
 ## Additional tools
-For a list of additional tools you can use when creating mods, see the [Additional Tools](/additional-resources/tools) page.
+For a list of additional tools you can use when creating mods, see the [Additional Tools](/docs/additional-resources/tools) page.

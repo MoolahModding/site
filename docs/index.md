@@ -11,7 +11,7 @@ Welcome to the PAYDAY 3 Modding Documentation site!
 We are only at the beginning of the life cycle of this game, but it has already been proven that advanced modding is possible.
 
 :::tip
-We recommend you join the [ModWorkShop Discord server](https://discord.gg/Eear4JW)
+We recommend you join the [Moolah Modding](https://discord.gg/VTe6pVYjWR) and [ModWorkShop](https://discord.gg/Eear4JW) Discord servers
 for questions and to interact with experienced members of the modding community.
 :::
 

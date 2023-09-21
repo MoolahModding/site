@@ -53,7 +53,7 @@ section of this guide
 
 ### Using wwise_pd3
 :::note
-At the moment, voice line support for wwise_pd3 is untested.
+At the moment, voice line encoding is supported, voice line decoding is not.
 :::
 
 1. Open a command prompt window in the folder your

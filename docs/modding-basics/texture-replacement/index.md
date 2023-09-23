@@ -82,7 +82,7 @@ I recommend placing repak.exe where the mod folder is:
 ![Mod Folder](assets/repak-1.png)
 
 Hold shift and right click where repak.exe is, click on `Open PowerShell window here`. You will see a window popup.
-To pack your mod type the following command:
+To pack your mod execute the following command:
 ```ps
  ./repak pack ModName
 ```

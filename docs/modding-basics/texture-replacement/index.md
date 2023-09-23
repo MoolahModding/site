@@ -22,7 +22,7 @@ Edit the texture's png file as you'd like.
 There are a few different ways to replace assets, we'll focus on two for textures.
 
 ### Using DDS-Tools
-*This method is mainly if you want to just replace a texture and not intetested in any other asset types.*
+*This method is mainly if you want to just replace a texture and not interested in any other asset types.*
 
 For this method you will need to **additionally** export the raw asset. Do the same as [exporting the texture](/docs/basics/using-fmodel/#exporting), but this time click on `Export Raw Data (.uasset)`. You should now see 4 files:
 ![Exported Files](assets/fmodel-5.png)

@@ -51,7 +51,7 @@ Open Unreal Engine and create a new project, **name it PAYDAY3**.
 In Unreal Engine, paths already begin from `Content`, therefore you need to ignore PAYDAY3/Content when working inside Unreal Engine.
 :::
 
-Go to `Content Browser`, right click below and click on `New Folder` and replicate the directory structure of the asset you wish to replace.
+Go to `Content Browser`, right-click below and click on `New Folder` and replicate the directory structure of the asset you wish to replace.
 So the end result should be like:
 
 ![Directory Structure](assets/unreal-engine-2.png)

@@ -18,7 +18,7 @@ That's it! You should now be able to access the game files without repeating thi
 
 ## Exporting
 
-Next, click on `Load` under the `Archives` tab (Make sure Loading Mode is set as `All`).
+Next, click on `Load` under the `Archives` tab, making sure Loading Mode is set as `All`.
 ![Load Packages](assets/fmodel-3.png)
 
 You should now see two folders, navigate through the PAYDAY3 folder and find which texture you wish to replace.

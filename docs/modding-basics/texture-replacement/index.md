@@ -66,7 +66,8 @@ After that you should have something like this:
 
 ![DDS Tools](assets/ddstools.png)
 
-Click inject and you are ready for packing. The folder with the cooked texture should appear in the tools directory if you followed the recommendation.
+Click `inject` and you are ready for packing.
+The folder with the cooked texture should appear in the tools directory if you followed the recommendation.
 
 ## Packing
 Packing is simple using Repak, however first you must make sure you replicate the pak path.

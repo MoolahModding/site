@@ -72,8 +72,9 @@ Once done, the cooked files should be in `Documents\Unreal Projects\PAYDAY3\Save
 Copy the **folder** there into some folder with repak in it so that it's in `MyMod/PAYDAY3/Content/`.
 
 ## Packing
-Packing is simple using Repak, however first you must make sure you replicate the pak path. In our case, the path is:
-`PAYDAY3/Content/Environment/_Common/Interactable/MobilePhone_01/Component` this is exactly how it should be before packing.
+Packing is simple using Repak, however first you must make sure you replicate the pak path.
+In our case, the path is `PAYDAY3/Content/Environment/_Common/Interactable/MobilePhone_01/Component`.
+This is exactly how it should be before packing.
 
 If you followed through the guide, the directory structure should look like so:
 ![Directory Structure](assets/directory-structure.png)

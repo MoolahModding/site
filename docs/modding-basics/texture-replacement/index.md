@@ -15,7 +15,7 @@ Let's start with a simple texture replacement, understanding it will allow you t
 I recommend putting the tools in some directory like `Tools` before doing anything.
 
 ## Replacing
-Find the texure you wish to replace, we'll replace the phone screen in this guide (`PAYDAY3/Content/Environment/_Common/Interactable/MobilePhone_01/Component/T_PhoneScreenWithAlpha_`). Go to the [Using FModel](/docs/basics/using-fmodel/) page to learn how.
+Find the texure you wish to replace, we'll replace the phone screen in this guide (`PAYDAY3/Content/Environment/_Common/Interactable/MobilePhone_01/Component/T_PhoneScreenWithAlpha_`). Go to the [Using FModel](/docs/modding-basics/using-fmodel/) page to learn how.
 
 Edit the texture's png file as you'd like.
 
@@ -24,7 +24,7 @@ There are a few different ways to replace assets, we'll focus on two for texture
 ### Using DDS-Tools
 *This method is mainly if you want to just replace a texture and not interested in any other asset types.*
 
-For this method you will need to **additionally** export the raw asset. Do the same as [exporting the texture](/docs/basics/using-fmodel/#exporting), but this time click on `Export Raw Data (.uasset)`. You should now see 4 files:
+For this method you will need to **additionally** export the raw asset. Do the same as [exporting the texture](/docs/modding-basics/using-fmodel/#exporting), but this time click on `Export Raw Data (.uasset)`. You should now see 4 files:
 ![Exported Files](assets/fmodel-5.png)
 
 Open DDS-Tools and do the following steps:

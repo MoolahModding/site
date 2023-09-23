@@ -92,4 +92,4 @@ You can pack as many files as you'd like into a single package and do not need t
 
 Your mod is now ready to be installed.
 
-![Alt text](assets/ingame.png)
+![In-Game](assets/ingame.png)

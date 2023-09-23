@@ -21,23 +21,6 @@ Edit the texture's png file as you'd like.
 
 There are a few different ways to replace assets, we'll focus on two for textures.
 
-### Using DDS-Tools
-*This method is mainly if you want to just replace a texture and not interested in any other asset types.*
-
-For this method you will need to **additionally** export the raw asset. Do the same as [exporting the texture](/docs/modding-basics/using-fmodel/#exporting), but this time click on `Export Raw Data (.uasset)`. You should now see 4 files:
-![Exported Files](assets/fmodel-5.png)
-
-Open DDS-Tools and do the following steps:
-1. Point DDS-Tools to the uasset file (`T_PhoneScreenWithAlpha_.uasset` in our case)
-2. Point DDS-Tools to the image file (`T_PhoneScreenWithAlpha_.png` in our case)
-3. Set an output folder, I recommend setting it to `ToolsDirectory/ModName/PAYDAY3/Content/Environment/_Common/Interactable/MobilePhone_01/Component` for reasons you will see in the packing stage. (The path may be different depending on the texture you are replacing). `ToolsDirectory` is where you placed the tools you downloaded in the prerequisites stage.
-4. Set UE version to `4.26 ~ 4.27`.
-After that you should have something like this:
-
-![DDS Tools](assets/ddstools.png)
-
-Click inject and you are ready for packing. The folder with the cooked texture should appear in the tools directory if you followed the recommendation.
-
 ### Using Unreal Engine
 *This method is here mainly to show the simplest form of asset replacement that can be used for almost any type of asset.*
 
@@ -67,6 +50,23 @@ Next step is to cook the files, simply click on `File` and then `Cook Content fo
 
 Once done, the cooked files should be in `Documents\Unreal Projects\PAYDAY3\Saved\Cooked\WindowsNoEditor\PAYDAY3\Content` (Your Unreal Projects directory may be different).
 Copy the **folder** there into some folder with repak in it so that it's in `MyMod/PAYDAY3/Content/`.
+
+### Using DDS-Tools
+*This method is mainly if you want to just replace a texture and not interested in any other asset types.*
+
+For this method you will need to **additionally** export the raw asset. Do the same as [exporting the texture](/docs/modding-basics/using-fmodel/#exporting), but this time click on `Export Raw Data (.uasset)`. You should now see 4 files:
+![Exported Files](assets/fmodel-5.png)
+
+Open DDS-Tools and do the following steps:
+1. Point DDS-Tools to the uasset file (`T_PhoneScreenWithAlpha_.uasset` in our case)
+2. Point DDS-Tools to the image file (`T_PhoneScreenWithAlpha_.png` in our case)
+3. Set an output folder, I recommend setting it to `ToolsDirectory/ModName/PAYDAY3/Content/Environment/_Common/Interactable/MobilePhone_01/Component` for reasons you will see in the packing stage. (The path may be different depending on the texture you are replacing). `ToolsDirectory` is where you placed the tools you downloaded in the prerequisites stage.
+4. Set UE version to `4.26 ~ 4.27`.
+After that you should have something like this:
+
+![DDS Tools](assets/ddstools.png)
+
+Click inject and you are ready for packing. The folder with the cooked texture should appear in the tools directory if you followed the recommendation.
 
 ## Packing
 Packing is simple using Repak, however first you must make sure you replicate the pak path.

@@ -26,7 +26,7 @@ You can also press <kbd>CTRL</kbd> + <kbd>SHIFT</kbd> + <kbd>F</kbd> to search f
 We'll export the phone screen texture (`PAYDAY3/Content/Environment/_Common/Interactable/MobilePhone_01/Component/T_PhoneScreenWithAlpha_`) 
 
 Once you find the texture you wish to replace, right click on the file and click `Save Texture (.png)`.
-FModel should print out a message on the console which let's you click to reveal where it saved the texture in.
+FModel should print out a message on the console with a path you can click to open the directory the file was saved to.
 
 ![Export Asset](assets/fmodel-4.webp)
 

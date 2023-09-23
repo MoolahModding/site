@@ -7,7 +7,7 @@ sidebar_position: 1
 ## Set up FModel for PAYDAY 3
 Open up FModel and set it up for PAYDAY 3 by clicking `Directory` > `Selector`.
 Then add the name of the game (doesn't matter what you call it) and the **root** directory of the game.
-![Setup Game](assets/fmodel-1.png)
+![Setup Game](assets/fmodel-1.webp)
 
 As of writing, PAYDAY 3 uses an AES key so in order to access the game files, you need to give the AES key to FModel.
 Open the menu for that by clicking `Directory` > `AES`.

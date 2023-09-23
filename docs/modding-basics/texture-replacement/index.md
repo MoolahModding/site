@@ -32,9 +32,6 @@ Open DDS-Tools and do the following steps:
 2. Point DDS-Tools to the image file (`T_PhoneScreenWithAlpha_.png` in our case)
 3. Set an output folder, I recommend setting it to `ToolsDirectory/ModName/PAYDAY3/Content/Environment/_Common/Interactable/MobilePhone_01/Component` for reasons you will see in the packing stage. (The path may be different depending on the texture you are replacing). `ToolsDirectory` is where you placed the tools you downloaded in the prerequisites stage.
 4. Set UE version to `4.26 ~ 4.27`.
-
-
-
 After that you should have something like this:
 
 ![DDS Tools](assets/ddstools.png)

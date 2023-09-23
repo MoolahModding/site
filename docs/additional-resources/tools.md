@@ -38,6 +38,11 @@ Unlike FModel, properties can be edited, and the asset can be re-exported to a c
 It allows viewing where actors are positioned in the map and viewing their properties.
 It also has the ability to transform (move, rotate) actors and to transplant actors from one map to another.
 
+## Other Tools
+
+### DDS-Tools
+[DDS-Tools](https://github.com/matyalatte/UE4-DDS-Tools) is a tool to used for texture modding. It's good for simple texture replacements and if you don't wish to install Unreal Engine.
+
 ## Working with cooked Blueprint code (aka Kismet)
 ### kismet-analyzer _by truman_
 [kismet-analyzer](https://github.com/trumank/kismet-analyzer) is a command line toolkit to help analyze and manipulate assets containing Kismet functions.

@@ -5,7 +5,7 @@ sidebar_position: 1
 # Using FModel
 
 ## Setup FModel for PAYDAY 3
-Open up FModel and Setup it for PAYDAY 3 by clicking `Directory` > `Selector`.
+Open up FModel and set it up for PAYDAY 3 by clicking `Directory` > `Selector`.
 Then adding the name of the game (Doesn't matter how you call it) and **root** directory of the game.
 ![Setup Game](assets/fmodel-1.png)
 

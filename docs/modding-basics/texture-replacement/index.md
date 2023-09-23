@@ -9,8 +9,8 @@ Let's start with a simple texture replacement, understanding it will allow you t
 ## Prerequisites
 * [FModel](/docs/additional-resources/tools#fmodel)
 * [Repak](/docs/additional-resources/tools#repak-by-truman)
-* [DDSTools](/docs/additional-resources/tools#dds-tools) If you do not wish to install Unreal Engine.
 * [Unreal Engine 4.27](https://www.unrealengine.com/en-US/download) If you plan to do more than simple asset replacements.
+* [DDSTools](/docs/additional-resources/tools#dds-tools) If you do not wish to install Unreal Engine.
 
 I recommend putting the tools in some directory like `Tools` before doing anything.
 

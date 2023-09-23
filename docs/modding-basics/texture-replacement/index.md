@@ -86,8 +86,6 @@ To pack your mod type the following command:
 ```ps
  ./repak pack ModName
 ```
-![Repak Command](assets/repak-2.png)
-
 :::tip
 You can pack as many files as you'd like into a single package and do not need to repeat the process for each replacement you do.
 :::

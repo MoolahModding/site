@@ -22,7 +22,7 @@ Edit the texture's png file as you'd like.
 There are a few different ways to replace assets, we'll focus on two for textures.
 
 ### Using DDS-Tools
-*This method is mainly if you want to just replace a texture and not intetested in any other asset types.*
+*This method is mainly if you want to just replace a texture and not interested in any other asset types.*
 
 For this method you will need to **additionally** export the raw asset. Do the same as [exporting the texture](/docs/basics/using-fmodel/#exporting), but this time click on `Export Raw Data (.uasset)`. You should now see 4 files:
 ![Exported Files](assets/fmodel-5.png)
@@ -51,7 +51,7 @@ Open Unreal Engine and create a new project, **name it PAYDAY3**.
 In Unreal Engine, paths already begin from `Content`, therefore you need to ignore PAYDAY3/Content when working inside Unreal Engine.
 :::
 
-Go to `Content Browser`, right click below and click on `New Folder` and replicate the directory structure of the asset you wish to replace.
+Go to `Content Browser`, right-click below and click on `New Folder` and replicate the directory structure of the asset you wish to replace.
 So the end result should be like:
 
 ![Directory Structure](assets/unreal-engine-2.png)
@@ -72,8 +72,9 @@ Once done, the cooked files should be in `Documents\Unreal Projects\PAYDAY3\Save
 Copy the **folder** there into some folder with repak in it so that it's in `MyMod/PAYDAY3/Content/`.
 
 ## Packing
-Packing is simple using Repak, however first you must make sure you replicate the pak path. In our case, the path is:
-`PAYDAY3/Content/Environment/_Common/Interactable/MobilePhone_01/Component` this is exactly how it should be before packing.
+Packing is simple using Repak, however first you must make sure you replicate the pak path.
+In our case, the path is `PAYDAY3/Content/Environment/_Common/Interactable/MobilePhone_01/Component`.
+This is exactly how it should be before packing.
 
 If you followed through the guide, the directory structure should look like so:
 ![Directory Structure](assets/directory-structure.png)
@@ -82,7 +83,7 @@ I recommend placing repak.exe where the mod folder is:
 ![Mod Folder](assets/repak-1.png)
 
 Hold shift and right click where repak.exe is, click on `Open PowerShell window here`. You will see a window popup.
-To pack your mod type the following command:
+To pack your mod execute the following command:
 ```ps
  ./repak pack ModName
 ```

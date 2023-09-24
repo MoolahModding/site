@@ -3,11 +3,16 @@ sidebar_position: 1
 ---
 
 # Asset Toolkit
-Some assets such as meshes and textures cannot be added to the unofficial modding toolkit<!-- TODO: add link when available -->,
-because they contain Starbreeze's intellectual property.
-If you wish to use these assets in your mod, you can generate and add them to the toolkit yourself.
+This documentation page explains the process
+performed to create the [template project](https://github.com/MoolahModding/MoolahProject).
+Additionally, you can use parts of this guide and its subpages
+to **supplement the template project** with assets which could not be included due to copyright reasons.
 
-The pipeline for generating 
+:::caution Advanced users only
+A ready-made [template project](https://github.com/MoolahModding/MoolahProject) is available for you to use,
+which will soon include most assets used by the game.
+This page exists only for the curious and for documentation purposes.
+:::
 
 ## Generating the project
 <!-- guide on generating headers and uproject -->
@@ -40,6 +45,8 @@ also known as CAS or CookedAssetSerializer.
 Additional information on this tool can be found on the [UEAssetToolkitGenerator Wiki](https://github.com/LongerWarrior/UEAssetToolkitGenerator/wiki).
 :::
 
+### General Settings
+
 ![Cooked Asset Serializer main settings](assets/cas-main-settings.png)
 
 In the **Run** tab of the program, you need to set five paths:
@@ -53,7 +60,7 @@ Then, before starting the serialization process,
 make sure to set the right Engine Version (4.27 at the time of writing)
 and enable **Multi-threaded**.
 
-:::caution
+:::caution Multi-threading
 Running serialization with multi-threading is experimental but speeds up the process 10x.
 If you want to be extra sure there are no faults in the output,
 you can simply run the serialization process more than once with **Refresh Assets** disabled.
@@ -66,10 +73,20 @@ then you can filter this in the next section.
 
 <img src={require('./assets/cas-asset-filter.png').default} style={{height: 500}} />
 
-Finally, run these in order:
-1. Scan Assets
-2. Serialize Native Assets
-3. Serialize Assets, this might take a while depending on your system specs
+Next we can run **Scan Assets**, which will locate all available assets and their type.
+
+### Serialization settings
+Next, we'll make some changes in the **Serialization Settings** tab.
+Unless you know what you're doing,
+we'll keep **Asset Types to Skip Serializing** and **Asset Types to Dummy** set to their defaults.
+We will however be adding Simple Assets.
+These are custom asset types created by the developers, such as Data Assets.
+
+To do this, click the **Open Asset List** button at the bottom of the **Run** tab.
+From this file, copy every line that starts with `/Script/Starbreeze`.
+Finally, go back to the **Serialization Settings** tab and
+add these lines into **Simple Assets** and **Assets with as circular Dependency**, without removing existing entries.
+You don't need to worry about the formatting, the program will ignore any quotes and commas.
 
 ## Generating Editor Assets
 :::info

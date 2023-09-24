@@ -45,21 +45,21 @@ In order to package your game files, you must make sure you have [cooked](#cooki
 Once cooked, you must copy out all the files your mod replaces or adds, like maps, models, textures, etc.
 When copying you must make sure the folder structure stays the same.
 For example, a custom map at `{UE4ProjectDir}/Saved/Cooked/WindowsNoEditor/PAYDAY3/Maps/CoolMap/CoolMap.umap`
-should be copied to `{PackagingStagingFolder}/PAYDAY3/Maps/CoolMap/CoolMap.umap`.
+should be copied to `{MyNewMod_P}/PAYDAY3/Maps/CoolMap/CoolMap.umap`.
 
-Once all your files are copied, you must now package the `PackageStagingFolder` with the tool of your choice.
+Once all your files are copied, you must now package the `MyNewMod_P` with the tool of your choice.
 The tool you use is up to personal preference, but the recommended tool is [repak by trumank](https://github.com/trumank/repak)
 
-1. Add [repak](https://github.com/trumank/repak/releases/latest) to your [`PATH`](https://medium.com/@kevinmarkvi/how-to-add-executables-to-your-path-in-windows-5ffa4ce61a53) or drop the exe next to the folder you want to pak (`PackageStagingFolder` in this case)
+1. Add [repak](https://github.com/trumank/repak/releases/latest) to your [`PATH`](https://medium.com/@kevinmarkvi/how-to-add-executables-to-your-path-in-windows-5ffa4ce61a53) or drop the exe next to the folder you want to pak (`MyNewMod_P` in this case)
 2. Open a `cmd` or `powershell` window in the folder by holding the `Shift` key and right clicking on the explorer background, then select in the context menu select "Open [command or powershell] window here".
-3. Run `repak.exe pack PackageStagingFolder` to pack `PackageStagingFolder` into `PackageStagingFolder.pak`.
+3. Run `repak.exe pack MyNewMod_P` to pack `MyNewMod_P` into `MyNewMod_P.pak`.
 ```
 C:\PD3_Modding> repak.exe pack PackagingStagingFolder
 Packed 2 files to PackagingStagingFolder.pak
 ```
-4. To verify proper packaging, you can run `repak.exe list PackageStagingFolder.pak` and it will list all the paths e.g.:
+4. To verify proper packaging, you can run `repak.exe list MyNewMod_P.pak` and it will list all the paths e.g.:
 ```
-C:\PD3_Modding> repak.exe list PackageStagingFolder.pak
+C:\PD3_Modding> repak.exe list MyNewMod_P.pak
 PAYDAY3/Maps/CoolMap/CoolMap.umap
 PAYDAY3/Maps/CoolMap/CoolMap.uexp
 ```

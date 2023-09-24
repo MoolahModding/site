@@ -10,7 +10,7 @@ sidebar_position: 3
  - A program that can extract UE4 PAK files (FModel, UModel)
  - A program that can pack UE4 files (repak, UnrealPak)
  - Model editing program, such as Blender, Maya, 3ds Max... (needs to support .psk files)
- - Blender plugin for importing .psk files (https://github.com/Befzz/blender3d_import_psk_psa)
+ - Blender plugin for importing .psk files (https://github.com/matyalatte/blender3d_import_psk_psa)
  - Basic knowledge of PBR materials and texture packing
 
 ## Extracing models from game files - Introduction
@@ -28,7 +28,7 @@ It's exptected you have an idea how to use Blender and know basics of rigging.
 
 ### Using Blender
 
-1. Import the .psk file you exported, change default Blender scale units to 0.01, scale the model up by 100, apply transforms.
+1. Import the .psk file you exported.
 2. Rig the models accordingly if necessary, some models don't have a skeleton or vertex groups.
 3. Add 3 addtional empty UV maps. (scale down until they're not visible)
 4. Add an additional empty material assigned to a face, has to be first slot.

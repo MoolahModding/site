@@ -50,7 +50,21 @@ should be copied to `{PackagingStagingFolder}/PAYDAY3/Maps/CoolMap/CoolMap.umap`
 Once all your files are copied, you must now package the `PackageStagingFolder` with the tool of your choice.
 The tool you use is up to personal preference, but the recommended tool is [repak by trumank](https://github.com/trumank/repak)
 
-Once packaged, place your pak files in `{InstallFolder}/PAYDAY3/Content/Paks/` and your mod should be loaded by PAYDAY 3.
+1. Add [repak](https://github.com/trumank/repak/releases/latest) to your [`PATH`](https://medium.com/@kevinmarkvi/how-to-add-executables-to-your-path-in-windows-5ffa4ce61a53) or drop the exe next to the folder you want to pak (`PackageStagingFolder` in this case)
+2. Open a `cmd` or `powershell` window in the folder by holding the `Shift` key and right clicking on the explorer background, then select in the context menu select "Open [command or powershell] window here".
+3. Run `repak.exe pack PackageStagingFolder` to pack `PackageStagingFolder` into `PackageStagingFolder.pak`.
+```
+C:\PD3_Modding> repak.exe pack PackagingStagingFolder
+Packed 2 files to PackagingStagingFolder.pak
+```
+4. To verify proper packaging, you can run `repak.exe list PackageStagingFolder.pak` and it will list all the paths e.g.:
+```
+C:\PD3_Modding> repak.exe list PackageStagingFolder.pak
+PAYDAY3/Maps/CoolMap/CoolMap.umap
+PAYDAY3/Maps/CoolMap/CoolMap.uexp
+```
+
+Once packaged, place your pak files in `{InstallFolder}/PAYDAY3/Content/Paks/~mods/` (create ~mods if it does not exist) and your mod should be loaded by PAYDAY 3.
 
 :::info Packaging for use with the launcher
 It's highly recommended to create a `pd3mod` before you upload your mod for users to install.

@@ -29,7 +29,7 @@ you can download it and add it to your PATH or place it in the Paks directory.
 
 ```shell
 cd C:\Program Files (x86)\Steam\steamapps\common\PAYDAY 3 Playtest\PAYDAY3\Content\Paks
-repak.exe --aes-key 0xABCDEF12345789 unpack --output out *.pak
+repak.exe --aes-key 0xABCDEF12345789 unpack --output out $(Resolve-Path *.pak)
 ```
 
 The AES encryption key is not shared publicly at this time,
@@ -120,6 +120,37 @@ If you encounter this issue, you can manually increase the Windows page size.
 
 After the command has run to completion, it is recommended to start the Unreal Editor
 to check if everything is in the right place and to let shaders compile.
+
+#### Materials
+To import materials into the editor, you can likewise use the command line.
+This one should take less time than generating textures and require less memory.
+
+```shell
+UE4Editor-Cmd.exe "C:\path\to\project\PAYDAY3.uproject" -run=AssetGenerator -DumpDirectory="C:\Users\YourUser\Documents\AssetToolkit\CASOutput" -AssetClassWhitelist="Material" -NoRefresh -abslog "C:\path\to\log\gen_log.txt" -stdout -unattended -NoLogTimes
+```
+
+The asset generator breaks on some materials,
+you can exclude them by editing `IsDumbAsset()` in `AssetTypeGenerator.cpp`:
+```cpp title="AssetTypeGenerator.cpp"
+bool UAssetTypeGenerator::IsDumbAsset()
+{
+   // ...
+
+	TArray<FString> excludedAssetNames = {
+		TEXT("MM_DECAL_Simple")
+		TEXT("MMMainMenu_DECAL_Simple"),
+	};
+	for (const FString& excludedAssetName : excludedAssetNames)
+	{
+		if (GetAssetName().ToString().Contains(excludedAssetName))
+		{
+			return true;
+		}
+	}
+	
+	return false;
+}
+```
 
 #### Models and Animations
 You can either generate dummy meshes and animations,

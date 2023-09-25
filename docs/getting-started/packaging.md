@@ -9,6 +9,7 @@ Follow these steps to make your mod installable by the Moolah Mod Launcher.
 The mod launcher is not quite available for use. Hang tight, we're almost there!
 :::
 
+## Mod metadata
 Start by creating a directory with the name and version of your mod. For example: `MyMod-v1.0.0`.
 
 Next, create a file called `pd3mod.json` inside.
@@ -53,7 +54,9 @@ Here's a simple example of what the metadata file could look like:
 The `id` and `version` fields are required.
 Version **must** follow the [Semantic Versioning 2.0.0](https://semver.org) specification.
 
-Next, if your mod has a **pak file**, add it to a folder called `Paks`.<br />
+## Adding your content
+Next, if your mod has a **pak file**, add it to a folder called `Paks`.
+Make sure your pak's file name ends with `_P.pak`, which will ensure any asset replacements get applied correctly.<br />
 If your mod has **UE4SS** lua scripts or DLLs, you can add those to a folder called `ue4ss`.
 
 :::caution UE4SS mods
@@ -65,20 +68,21 @@ All together, it should look something like this:
 
 ```
 MyMod-v1.0.0
-├── pak
+├── paks
 │   └── MyMod.pak
-├── ue4ss
-│   ├── dlls
-│   │   └── main.dll
-│   └── Scripts
-│       ├── main.lua
-│       └── util.lua
+├── dlls
+│   └── main.dll
+├── scripts
+│   ├── main.lua
+│   └── util.lua
 ├── icon.png
 └── pd3mod.json
 ```
 
+## Finishing up
 With all of your files in the right place,
 you can now zip up the **contents** of the directory.
 Make sure `pd3mod.json` is at the root of the zip file and not in another subdirectory.
 
 Finally, change the file extension of the resulting `.zip` file to `.pd3mod` and test it out with the mod launcher.
+The mod should now be ready to upload to your preferred mod hosting site.

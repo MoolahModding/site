@@ -169,17 +169,9 @@ An easy way to do this is to first [git stash](https://git-scm.com/docs/git-stas
 Then after generating the assets you can simply add everything under `Content` to your `.gitignore` file.
 :::
 
-### Materials
 :::note
-If you have not yet [generated texture assets](..#textures) in your project, now would be the time to do so.
+If you have not yet [generated texture/material assets](..#textures) in your project, now would be the time to do so.
 :::
-
-To import materials into the editor, you can likewise use the command line.
-This one should take less time than generating textures and require less memory.
-
-```shell
-UE4Editor-Cmd.exe "C:\path\to\project\PAYDAY3.uproject" -run=AssetGenerator -DumpDirectory="C:\Users\YourUser\Documents\AssetToolkit\CASOutput" -AssetClassWhitelist="Material" -NoRefresh -abslog "C:\path\to\log\gen_log.txt" -stdout -unattended -NoLogTimes
-```
 
 ### Static Meshes
 In your editor, navigate to `Window -> Developer Tools -> Asset Generator`.

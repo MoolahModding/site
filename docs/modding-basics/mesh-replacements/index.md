@@ -53,13 +53,14 @@ It's exptected you have an idea how to use Blender and know basics of rigging.
 1. You can use either Substance Painter with an export preset or any image manipulation program.
 2. Your texture should be packed as following:
 
-** Albedo(RGB)Labels(A)
-    RGB: - base color/albedo 
-    Alpha: - emission mask
-** BaseNormal(RG)Roughness(B)Metallic(A)
-    RG: - 2-channel DirectX normal map
-    Blue: - Roughness
-    Alpha: - Metallic
+* ` Texture1 - Albedo(RGB)Labels(A)`
+   * RGB: - base color/albedo 
+   * Alpha: - emission mask
+     
+* ` Texture2 - BaseNormal(RG)Roughness(B)Metallic(A)`
+   * RG: - 2-channel DirectX normal map
+   * Blue: - Roughness
+   * Alpha: - Metallic
 
 3. Set the Normal texture Compression Settings to Masks.
 

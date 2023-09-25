@@ -2,36 +2,28 @@
 sidebar_position: 3
 ---
 
-# Custom Static Model Replacements
+# Static Model Replacements
 
 ## Prerequisites
 
- - Unreal Engine 4.27.2 is required
- - A program that can extract UE4 PAK files (FModel, UModel)
- - A program that can pack UE4 files (repak, UnrealPak)
- - Model editing program, such as Blender, Maya, 3ds Max... (needs to support .psk files)
- - Blender plugin for importing .psk files (https://github.com/matyalatte/blender3d_import_psk_psa)
- - Basic knowledge of PBR materials and texture packing
+ * Unreal Engine 4.27.2 is required
+ * A program that can extract assets from UE4 PAK files (FModel, UModel)
+ * A program that can pack UE4 files (repak, UnrealPak)
+ * Model editing program, such as Blender, Maya, 3ds Max... (needs to support .psk files)
+ * Blender plugin for importing .psk files (https://github.com/matyalatte/blender3d_import_psk_psa)
+ * Basic knowledge of PBR materials and texture packing
 
 ## Extracing models from game files - Introduction
 
-For this, I will be using Fmodel, you can also use Umodel, however Fmodel is the easiest to work with and has better support. I will also be using Blender with the .psk addon.
+For this, we will be using Fmodel, you can also use Umodel, however Fmodel is the easiest to work with and has better support. I will also be using Blender with the .psk addon.
 It's exptected you have an idea how to use Blender and know basics of rigging.
-
-### Using Fmodel
-
-1. Open up Fmodel, go to Directory -> Selector, fill in the Directory field with the game's files location.
-2. Input AES key in the Directory -> AES, input `0x27DFBADBB537388ACDE27A7C5F3EBC3721AF0AE0A7602D2D7F8A16548F37D394` in the Main Static Key field.
-3. In Loading Mode select All, this will load all .pak files at once, giving you access to all game files.
-4. Look for the file you want to replace, such as the Moneybag model `PAYDAY3/Content/Gameplay/Player/Props/Moneybag_01/Meshes`, you can also use Fmodel's search function (Packages -> Search)
-5. Extract the model (Right click -> Save Model .psk), the exported file location will pop up in the Log window below, you can click the underlined text to open the asset's location.
 
 ### Using Blender
 
-1. Import the .psk file you exported.
+1. Import the .psk file you exported using [Fmodel.](/docs/modding-basics/using-fmodel)
 2. Rig the models accordingly if necessary, some models don't have a skeleton or vertex groups.
-3. Add 3 addtional empty UV maps. (scale down until they're not visible)
-4. Add an additional empty material assigned to a face, has to be first slot.
+3. Add 3 addtional empty UV maps. (scale down until they're not visible). This is necessary to remove possible masking being applied to the model.
+4. Add an additional empty material assigned to a face, has to be first slot. This is necessary to remove possible masking being applied to the model, however not the case with all models. It's a good habit to include it.
 5. Export the model as .FBX with following settings:
 
 ![Settings](assets/blender_export.png)
@@ -79,16 +71,16 @@ There's a few ways to do this, I will cover the way I personally cook and pack m
 2. Go in `YouProjectName\Saved\Cooked\WindowsNoEditor\YouProjectName` and copy the Content folder.
 3. Paste the Content folder in a different location where your workfolder is located. (You should create some sort of a workfolder for organization, not necessary)
 4. Create a folder called pakchunk99-Mods_YourModsName_P and paste in the Content folder you copied. (Mod names can differ, this is just how I personally name them, the `_P` is necessary)
-5. Find the master material uasset (MM_HelicopterInterior.uasset) and don't cook/delete it.
-6. Create the .pak file, you can either use UnrealPak, repak or other solutions.
+5. Find the master material uasset (MM_HelicopterInterior.uasset) and don't cook/don't copy it to your mods workfolder.
+6. Create the .pak file, you can either use [UnrealPak, repak or other solutions.](/docs/additional-resources/tools)
 
-### Testing it out
+### Testing the mod
 
-1. Put the .pak file in the game's Paks directory `PAYDAY3\PAYDAY3\Content\Paks` or the mods 
+1. Put the .pak file in the game's Paks directory `PAYDAY3\PAYDAY3\Content\Paks` or the `mods folder`.
 2. The model should now appear in-game if you've done everything correctly.
 
-If you've got questions, feel free to contact me on Discord. (unselles)
+# Skeletal Model Replacements
 
-# Custom Skeletal Model Replacements
-
-WIP
+:::caution Work in progress
+This section is not yet available.
+:::

@@ -15,12 +15,12 @@ sidebar_position: 3
 
 ## Extracing models from game files - Introduction
 
-For this, we will be using Fmodel, you can also use Umodel, however Fmodel is the easiest to work with and has better support. I will also be using Blender with the .psk addon.
+For this, we will be using Fmodel, you can also use Umodel, however Fmodel is the easiest to work with and has better support. We will also be using Blender with the .psk addon.
 It's exptected you have an idea how to use Blender and know basics of rigging.
 
 ### Using Blender
 
-1. Import the .psk file you exported using [Fmodel.](/docs/modding-basics/using-fmodel)
+1. Import the .psk file you exported using [Fmodel](/docs/modding-basics/using-fmodel).
 2. Rig the models accordingly if necessary, some models don't have a skeleton or vertex groups.
 3. Add 3 addtional empty UV maps. (scale down until they're not visible). This is necessary to remove possible masking being applied to the model.
 4. Add an additional empty material assigned to a face, has to be first slot. This is necessary to remove possible masking being applied to the model, however not the case with all models. It's a good habit to include it.

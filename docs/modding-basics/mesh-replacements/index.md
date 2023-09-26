@@ -40,7 +40,7 @@ It's exptected you have an idea how to use Blender and know basics of rigging.
 
 1. We will be referencing already existing master material in the game.
 2. Create project hierarchy:
-`Content/MasterMaterial/Vehicles/Helicopter/MM_HelicopterInterior`
+`Content/MasterMaterial/Vehicles/Helicopter`
 3. Create a Material, name it as following `MM_HelicopterInterior`
 4. Set up the material as following:
 

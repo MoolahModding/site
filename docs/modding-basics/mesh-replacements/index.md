@@ -6,12 +6,12 @@ sidebar_position: 3
 
 ## Prerequisites
 
- * Unreal Engine 4.27.2 is required
- * A program that can extract assets from UE4 PAK files (FModel, UModel)
- * A program that can pack UE4 files (repak, UnrealPak)
- * Model editing program, such as Blender, Maya, 3ds Max... (needs to support .psk files)
- * Blender plugin for importing .psk files (https://github.com/matyalatte/blender3d_import_psk_psa)
- * Basic knowledge of PBR materials and texture packing
+ ** Unreal Engine 4.27.2 is required
+ ** A program that can extract assets from UE4 PAK files (FModel, UModel)
+ ** A program that can pack UE4 files (repak, UnrealPak)
+ ** Model editing program, such as Blender, Maya, 3ds Max... (needs to support .psk files)
+ ** Blender plugin for importing .psk files (https://github.com/matyalatte/blender3d_import_psk_psa)
+ ** Basic knowledge of PBR materials and texture packing
 
 ## Extracing models from game files - Introduction
 
@@ -40,7 +40,7 @@ It's exptected you have an idea how to use Blender and know basics of rigging.
 
 1. We will be referencing already existing master material in the game.
 2. Create project hierarchy:
-`Content/MasterMaterial/Vehicles/Helicopter/MM_HelicopterInterior`
+`Content/MasterMaterial/Vehicles/Helicopter`
 3. Create a Material, name it as following `MM_HelicopterInterior`
 4. Set up the material as following:
 
@@ -53,14 +53,13 @@ It's exptected you have an idea how to use Blender and know basics of rigging.
 1. You can use either Substance Painter with an export preset or any image manipulation program.
 2. Your texture should be packed as following:
 
-* ` Texture1 - Albedo(RGB)Labels(A)`
-   * RGB: - base color/albedo 
-   * Alpha: - emission mask
-     
-* ` Texture2 - BaseNormal(RG)Roughness(B)Metallic(A)`
-   * RG: - 2-channel DirectX normal map
-   * Blue: - Roughness
-   * Alpha: - Metallic
+** Albedo(RGB)Labels(A)
+    RGB: - base color/albedo 
+    Alpha: - emission mask
+** BaseNormal(RG)Roughness(B)Metallic(A)
+    RG: - 2-channel DirectX normal map
+    Blue: - Roughness
+    Alpha: - Metallic
 
 3. Set the Normal texture Compression Settings to Masks.
 

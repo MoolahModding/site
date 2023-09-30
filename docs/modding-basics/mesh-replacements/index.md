@@ -62,7 +62,7 @@ It's exptected you have an idea how to use Blender and know basics of rigging.
    * Blue: - Roughness
    * Alpha: - Metallic
 
-3. Set the Normal texture Compression Settings to Masks.
+3. Set the Normal texture Compression Settings to Masks/BC7 with sRGB unticked. (BC7 is higher quality but also bigger size.)
 
 ### Creating and assigning material instances
 

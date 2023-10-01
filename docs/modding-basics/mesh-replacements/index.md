@@ -81,6 +81,11 @@ The textures for the `MM_HelictopterInterior` material we used earlier are packe
 In order to achieve this,
 you can use either [Substance Painter](https://www.adobe.com/be_en/products/substance3d-painter.html) with an export preset
 or any image manipulation program.
+
+Substance Painter preset for HelicopterInterior texture packing:
+
+![substance preset](assets/substance-preset.png)
+
 After importing into the editor,
 set the **Compression Settings** of the normal texture to **Masks** or **BC7 with sRGB unticked**.
 BC7 results in higher quality but also a bigger file size.

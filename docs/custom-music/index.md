@@ -11,6 +11,7 @@ You do not require Unreal Engine to be installed to replace the game's audio
  - Wwise 2021.1.13.8036 **or** [wwise_pd3](https://github.com/MoolahModding/wwise_pd3/releases/latest)
  - A program that can extract UE4 PAK files (FModel, UModel)
  - A program that can pack UE4 PAK files (repak, UnrealPak)
+ - Bence's Uexp Utility, to edit the uexp to have the right size: https://github.com/bence0585/Bences-uexp-utility
 
 ## Setting up your sound files
 In order for Wwise and wwise_pd3 to work properly, your files must be
@@ -87,8 +88,10 @@ as you will need it later
 Now, you can delete the ubulk from the game and rename your wem file to have the same name,
 including the extension.
 
-:::note
-TODO: Write a script that modifies the uexp for you
+### Editing the uexp
+
+:::info
+If you do not wish to edit the uexp yourself, use [Bence's Uexp Utility](https://github.com/bence0585/Bences-uexp-utility)
 :::
 
 If you package it like this, it will play for a moment in the game, but will quickly

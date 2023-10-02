@@ -95,10 +95,15 @@ If you do not wish to edit the uexp yourself, use [Bence's Uexp Utility](https:/
 :::
 
 If you package it like this, it will play for a moment in the game, but will quickly
-turn to loud static. To fix this issue, open the uexp you extracted in a hex editor.
-And find the size in bytes you noted earlier and find it in the file. It should
-occur twice in the file. Now, get the size in bytes of your replacement ubulk,
-and change both occurrences to the size of your new file.
+turn to loud static. To fix this issue, open the uexp you extracted earlier in a hex editor, then open the
+properties window of the ubulk you originally extracted. Take the size (in bytes) of the ubulk,
+and convert it to hex here: https://www.save-editor.com/tools/wse_hex.html
+
+Make sure to have Little Endian box ticked. Copy the converted hex and search for it in the hex editor 
+with CTRL+F. You should find this hex string twice in the hex editor. Now open the properties of your new 
+ubulk which was the wem file you made. Convert that file size (in bytes) to hex as well. Finally, replace 
+those 2 instances of the old file's size in hex with the new hex converted size you obtained.
+Make sure to save your uexp file in the hex editor before closing.
 
 Once done, save and repackage your mod, and you'll find your audio replacement plays properly.
 

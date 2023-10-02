@@ -41,8 +41,8 @@ A guide on replacing skeletal meshes is not yet available.
 ## Importing in Unreal Engine
 1. You will need to set up the correct project hierarchy, using the money bag model as an example,
    the hierarchy is as follows: `Content/Gameplay/Player/Props/Moneybag_01/Meshes`
-2. Always remember that unreal projects make the Content folder for you. So start your
-   path recreation from Content/
+2. Always remember that Unreal projects make the `Content` folder for you. So start your
+   path recreation from `Content/`
 3. Import the .FBX with these settings if you're importing a static mesh:
 
 ![unreal fbx import settings](assets/fbx-import.png)

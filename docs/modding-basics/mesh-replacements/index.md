@@ -29,17 +29,21 @@ A guide on replacing skeletal meshes is not yet available.
 3. Add three additional "empty" UV maps.
    To do this, scale them down until they're not visible.
    This is sometimes necessary to remove masking being applied to the model.
-4. Add an empty material assigned to a face, and make it the first slot.
+   You can easily scale them down to invisible by selecting the entire UV,
+   then inputting S (for scale) then 0 (for size 0). Then hit enter.
+5. Add an empty material assigned to a face, and make it the first slot.
    This is sometimes necessary to remove masking being applied to the model.
    It is not the case with all models, however, it's a good habit to include it.
-5. Export the model as `.fbx` with the following settings:
+6. Export the model as `.fbx` with the following settings:
 
 ![blender export settings](assets/blender-export.png)
 
 ## Importing in Unreal Engine
 1. You will need to set up the correct project hierarchy, using the money bag model as an example,
    the hierarchy is as follows: `Content/Gameplay/Player/Props/Moneybag_01/Meshes`
-2. Import the .FBX with these settings if you're importing a static mesh:
+2. Always remember that unreal projects make the Content folder for you. So start your
+   path recreation from Content/
+3. Import the .FBX with these settings if you're importing a static mesh:
 
 ![unreal fbx import settings](assets/fbx-import.png)
 

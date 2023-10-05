@@ -141,9 +141,10 @@ values contained within a .uexp file located in
 
 Editing the values inside the uexp using a hex editor like HxD lets you set your own duration, loop times and fade in/fade out times.
 
+
 | Offset   | Value Type       | Value Scale  | Function               | Notes
-|:---------|:-----------------|:-------------|:-----------------------|                                                                                                        |
-| 0x146    | float64 (Double) | milliseconds | Music Duration         |                                                                                                        |
+|:---------|:-----------------|:-------------|:-----------------------|:-------------------------------------------------------------------------------------------------------|
+| 0x146    | float64 (Double) | milliseconds | Music Duration         |    																									   |
 | 0x162    | float32 (Single) | seconds      | Fade in Start          |                                                         										       |
 | 0x16E    | float32 (Single) | seconds      | Fade in End            |                                                                         							   |
 | 0x192    | float32 (Single) | seconds      | Fade out Start         |                                                                                                        |

@@ -121,10 +121,31 @@ Once done, save and repackage your mod, and you'll find your audio replacement p
 | BranchBank_Transition_Assault_C_to_Control_130bpm_1beatPreEntry_v03                      | 160788638  ||
 | BranchBank_Transition_Assault_D_to_Control_130bpm_1beatPreEntry                          | 377552255  ||
 | BranchBank_Transition_Stealth01_to_Control_130bpm_2barsPreEntry                          | 725612459  ||
-| BranchBank_Transition_Stealth01_to_Stealth02_130bpm_2beatsPreEntry                       | 839959304  |
+| BranchBank_Transition_Stealth01_to_Stealth02_130bpm_2beatsPreEntry                       | 839959304  ||
 | BranchBank_Transition_Stealth02_to_Stealth03_130bpm_3beatsPreEntry                       | 793440025  ||
 | BranchBank_Transition_Stealth03_to_Stealth04_130bpm_1Bar_2beatsPreEntry                  | 1057654261 ||
 | BranchBank_Transition_Stealth04_to_Stealth05_130bpm_1Bar_2beatsPreEntry                  | 532610310  ||
+
+### Road Rage / ArmoredTransport
+| Name                                                                                     | Wwise Id   | Notes                   |
+|:-----------------------------------------------------------------------------------------|:-----------|:------------------------|
+| ArmoredTransport_Anticipation_Intro_166bpm_24bars_v02                                    | 453016458  | Identical to 137732051  |
+| ArmoredTransport_Anticipation_Intro_166bpm_24bars                                        | 137732051  | Identical to 453016458  |
+| ArmoredTransport_Anticipation_Loop_166bpm_4bars                                          | 477614665  |                         |
+| ArmoredTransport_Assault_Intro_166bpm_4bars_1beatPreEntry                                | 1052348541 |                         |
+| ArmoredTransport_Assault_Loop_v02                                                        | 813112398  |                         |
+| ArmoredTransport_Assault_LastSection_B                                                   | 1050812236 |                         |
+| ArmoredTransport_Control_Intro_166bpm_4bars_1beatPreEntry                                | 554427052  |                         |
+| ArmoredTransport_Control_Loop_166bpm_32bars_v03                                          | 346361875  |                         |
+| ArmoredTransport_Transition_Control_To_Anticipation_166bpm_1barPreEntry                  | 380854622  |                         |
+| ArmoredTransport_Transition_Stealth01_To_Stealth02_166bpm_1barPreEntry                   | 383061978  |                         |
+| ArmoredTransport_Transition_Stealth02_To_Stealth03_166bpm_2beatsPreEntry                 | 1037935768 |                         |
+| ArmoredTransport_Stealth_TicksLayer                                                      | 462220049  |                         |
+| ArmoredTransport_Stealth_Intensity01_166bpm_32bars                                       | 119619706  |                         |
+| ArmoredTransport_Stealth_Intensity02_166bpm_32bars                                       | 945680714  |                         |
+| ArmoredTransport_Stealth_Intensity03_166bpm_32bars_2beatsPreEntry                        | 720039556  |                         |
+| ArmoredTransport_Stealth_Intensity04_166bpm_32bars                                       | 907001566  |                         |
+| ArmoredTransport_Stealth_Intensity05_166bpm_32bars_2beatsPreEntry                        | 6866830    |                         |
 
 ### Other / Menus
 | Name                   | Wwise Id   | Notes                                             |

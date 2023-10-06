@@ -147,6 +147,44 @@ Once done, save and repackage your mod, and you'll find your audio replacement p
 | ArmoredTransport_Stealth_Intensity04_166bpm_32bars                                       | 907001566  |                         |
 | ArmoredTransport_Stealth_Intensity05_166bpm_32bars_2beatsPreEntry                        | 6866830    |                         |
 
+### Dirty Ice / JewelryStore
+| Name                                                                                     | Wwise Id   | Notes                   |
+|:-----------------------------------------------------------------------------------------|:-----------|:------------------------|
+| JewelryStore_Anticipation_122bpm_16bars_v02                                              | 512441130  ||
+| JewelryStore_Anticipation_Loop_122bpm_2bars                                              | 213107001  ||
+| JewelryStore_Assault_Intro_v04                                                           | 815054773  ||
+| JewelryStore_Assault_Loop_v04                                                            | 1066922217 ||
+| JewelryStore_Control_Loop_122bpm_40Bars_v02                                              | 131430820  ||
+| JewelryStore_TransitionSegment_Assault_to_Control_122bpm_4bars_1BarPreEntry              | 465774260  ||
+| JewelryStore_Transition_Stealth01_to_02_1BarPreEntry                                     | 648075674  ||
+| JewelryStore_TransitionSegment_Stealth02_to_03_8Bars                                     | 614953566  ||
+| JewelryStore_Transition_Stealth03_to_04_2BeatsPreEntry                                   | 782118382  ||
+| JewelryStore_TransitionSegment_Stealth04_to_05_2Bars                                     | 986034213  ||
+| JewelryStore_Stealth_Intensity01_122bpm_40bars                                           | 437695167  ||
+| JewelryStore_Stealth_Intensity02_122bpm_48bars_1BeatPreEntry                             | 19317627   ||
+| JewelryStore_Stealth_Intensity03_122bpm_64bars                                           | 50641269   ||
+| JewelryStore_Stealth_Intensity04_122bpm_56bars                                           | 1041068951 ||
+| JewelryStore_Stealth_Intensity05_122bpm_56bars                                           | 439832318  ||
+
+### Rock The Cradle / NightClub
+| Name                                                                                     | Wwise Id   | Notes                   |
+|:-----------------------------------------------------------------------------------------|:-----------|:------------------------|
+|                                               |   ||
+|                                               |   ||
+|                                                            |   ||
+|                                                             |  ||
+|                                               |   ||
+|               |   ||
+|                                      |   ||
+|                                      |   ||
+|                                    |   ||
+|                                      |   ||
+|                                            |   ||
+|                              |    ||
+|                                            |    ||
+|                                            |  ||
+|                                            |   ||
+
 ### Other / Menus
 | Name                   | Wwise Id   | Notes                                             |
 |:-----------------------|:-----------|:--------------------------------------------------|

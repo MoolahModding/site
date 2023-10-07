@@ -121,10 +121,145 @@ Once done, save and repackage your mod, and you'll find your audio replacement p
 | BranchBank_Transition_Assault_C_to_Control_130bpm_1beatPreEntry_v03                      | 160788638  ||
 | BranchBank_Transition_Assault_D_to_Control_130bpm_1beatPreEntry                          | 377552255  ||
 | BranchBank_Transition_Stealth01_to_Control_130bpm_2barsPreEntry                          | 725612459  ||
-| BranchBank_Transition_Stealth01_to_Stealth02_130bpm_2beatsPreEntry                       | 839959304  |
+| BranchBank_Transition_Stealth01_to_Stealth02_130bpm_2beatsPreEntry                       | 839959304  ||
 | BranchBank_Transition_Stealth02_to_Stealth03_130bpm_3beatsPreEntry                       | 793440025  ||
 | BranchBank_Transition_Stealth03_to_Stealth04_130bpm_1Bar_2beatsPreEntry                  | 1057654261 ||
 | BranchBank_Transition_Stealth04_to_Stealth05_130bpm_1Bar_2beatsPreEntry                  | 532610310  ||
+
+### Road Rage / ArmouredTransport
+| Name                                                                                     | Wwise Id   | Notes                   |
+|:-----------------------------------------------------------------------------------------|:-----------|:------------------------|
+| ArmoredTransport_Anticipation_Intro_166bpm_24bars_v02                                    | 453016458  | Identical to 137732051  |
+| ArmoredTransport_Anticipation_Intro_166bpm_24bars                                        | 137732051  | Identical to 453016458  |
+| ArmoredTransport_Anticipation_Loop_166bpm_4bars                                          | 477614665  ||
+| ArmoredTransport_Assault_Intro_166bpm_4bars_1beatPreEntry                                | 1052348541 ||
+| ArmoredTransport_Assault_Loop_v02                                                        | 813112398  ||
+| ArmoredTransport_Assault_LastSection_B                                                   | 1050812236 ||
+| ArmoredTransport_Control_Intro_166bpm_4bars_1beatPreEntry                                | 554427052  ||
+| ArmoredTransport_Control_Loop_166bpm_32bars_v03                                          | 346361875  ||
+| ArmoredTransport_Transition_Control_To_Anticipation_166bpm_1barPreEntry                  | 380854622  ||
+| ArmoredTransport_Transition_Stealth01_To_Stealth02_166bpm_1barPreEntry                   | 383061978  ||
+| ArmoredTransport_Transition_Stealth02_To_Stealth03_166bpm_2beatsPreEntry                 | 1037935768 ||
+| ArmoredTransport_Stealth_TicksLayer                                                      | 462220049  ||
+| ArmoredTransport_Stealth_Intensity01_166bpm_32bars                                       | 119619706  ||
+| ArmoredTransport_Stealth_Intensity02_166bpm_32bars                                       | 945680714  ||
+| ArmoredTransport_Stealth_Intensity03_166bpm_32bars_2beatsPreEntry                        | 720039556  ||
+| ArmoredTransport_Stealth_Intensity04_166bpm_32bars                                       | 907001566  ||
+| ArmoredTransport_Stealth_Intensity05_166bpm_32bars_2beatsPreEntry                        | 6866830    ||
+
+### Dirty Ice / JewelryStore
+| Name                                                                                     | Wwise Id   | Notes                   |
+|:-----------------------------------------------------------------------------------------|:-----------|:------------------------|
+| JewelryStore_Anticipation_122bpm_16bars_v02                                              | 512441130  ||
+| JewelryStore_Anticipation_Loop_122bpm_2bars                                              | 213107001  ||
+| JewelryStore_Assault_Intro_v04                                                           | 815054773  ||
+| JewelryStore_Assault_Loop_v04                                                            | 1066922217 ||
+| JewelryStore_Control_Loop_122bpm_40Bars_v02                                              | 131430820  ||
+| JewelryStore_TransitionSegment_Assault_to_Control_122bpm_4bars_1BarPreEntry              | 465774260  ||
+| JewelryStore_Transition_Stealth01_to_02_1BarPreEntry                                     | 648075674  ||
+| JewelryStore_TransitionSegment_Stealth02_to_03_8Bars                                     | 614953566  ||
+| JewelryStore_Transition_Stealth03_to_04_2BeatsPreEntry                                   | 782118382  ||
+| JewelryStore_TransitionSegment_Stealth04_to_05_2Bars                                     | 986034213  ||
+| JewelryStore_Stealth_Intensity01_122bpm_40bars                                           | 437695167  ||
+| JewelryStore_Stealth_Intensity02_122bpm_48bars_1BeatPreEntry                             | 19317627   ||
+| JewelryStore_Stealth_Intensity03_122bpm_64bars                                           | 50641269   ||
+| JewelryStore_Stealth_Intensity04_122bpm_56bars                                           | 1041068951 ||
+| JewelryStore_Stealth_Intensity05_122bpm_56bars                                           | 439832318  ||
+
+### Rock The Cradle / NightClub
+| Name                                                                                     | Wwise Id   | Notes                   |
+|:-----------------------------------------------------------------------------------------|:-----------|:------------------------|
+| PD3_Nightclub_Anticipation_95bpm_12bars_1beatPreEntry                                    | 705874409  ||
+| PD3_Nightclub_assault                       						                       | 766880424  ||
+| PD3_Nightclub_Control_95bpm	                                                           | 324150475  ||
+| PD3_Nightclub_Transition_Assault_to_Control_1bar_1beatPreEntry                           | 245507844 	||
+| CLUB_TEST_BASEMENT_WET                                                                   | 20476150   ||
+| CLUB_TEST_BASEMENT_DRY                                                                   | 1057717042 ||
+| CLUB_TEST_WET                                                                            | 20705974   ||
+| CLUB_TEST_DRY                                                                            | 162489299  ||
+| Nightclub_Cuckoo_Intro                                                                   | 868634023  ||
+| Nightclub_Cuckoo_Loop                                                                    | 324756096  ||
+| NC_Distraction_WET_002                                                                   | 656772061  ||
+| NC_Distraction_WET-001                                                                   | 696024128  ||
+
+### Under The Surphaze / ArtGallery
+| Name                                                                                     | Wwise Id   | Notes                   |
+|:-----------------------------------------------------------------------------------------|:-----------|:------------------------|
+| ArtGallery_Anticipation_Intro_92bpm_12bars_2beatsPreEntry                                | 256616791  ||
+| ArtGallery_Anticipation_Part_A                       						               | 392338477  ||
+| ArtGallery_Anticipation_Loop_92bpm_2bars	                                               | 440665508  ||
+| ArtGallery_Assault_Intro_92bpm_2bars_2beatsPreEntry                                      | 390764632  ||
+| ArtGallery_Assault_Loop_v02                                                              | 449860291  ||
+| ArtGallery_Control_Intro_92bpm_4bars                                                     | 802058736 	||
+| ArtGallery_Control_Loop_92bpm_16bars                                                     | 569230195  ||
+| ArtGallery_Transition_Assault_to_Control_92bpm_1bar                                      | 838840091  ||
+| ArtGallery_Transition_Stealth01_to_Stealth02_92bpm_1beatPreEntry                         | 220166870  ||
+| ArtGallery_Transition_Stealth02_to_Stealth03_92bpm_1beatPreEntry                         | 970158146  ||
+| ArtGallery_Transition_Stealth03_to_Stealth04_92bpm_2beatsPreEntry                        | 316937324  ||
+| ArtGallery_Transition_Stealth04_to_Stealth05_92bpm_2beatsPreEntry                        | 876397958  ||
+| ArtGallery_Stealth_Intro_92bpm_8bars_v02                                                 | 999499295  ||
+| ArtGallery_Stealth_Intensity01_92bpm_64bars_v02                                          | 128021088  ||
+| ArtGallery_Stealth_Intensity02_92bpm_32bars                                              | 479597113  ||
+| ArtGallery_Stealth_Intensity03_92bpm_32bars                                              | 772769434  ||
+| ArtGallery_Stealth_Intensity04_92bpm_32bars                                              | 285174518  ||
+| ArtGallery_Stealth_Intensity05_92bpm_32bars                                              | 566464909  ||
+
+### Golde and Sharke / FirstPlayable
+| Name                                                                                     | Wwise Id   | Notes                   |
+|:-----------------------------------------------------------------------------------------|:-----------|:------------------------|
+| PD3_FirstPlayable_Anticipation_Intro_v02                                                 | 612679541  ||
+| PD3_FirstPlayable_Anticipation_Loop                       						       | 141289577  ||
+| PD3_FirstPlayable_AssaultIntro	                                                       | 161221342  ||
+| FirstPlayable_Assault_Loop_v02                                                           | 1059435438 ||
+| PD3_FirstPlayable_Control_Intro                                                          | 362700916  ||
+| PD3_FirstPlayable_Control_Loop_v04                                                       | 250602562 	||
+| PD3_FirstPlayable_Transition_Control_to_Anticipation_2beatsPreEntry                      | 610372746  ||
+| PD3_FirstPlayable_Transition_Anticipation_to_Assault_1bar                                | 685577487  ||
+| PD3_FirstPlayable_Transition_Steath_to_Control_2bars                                     | 299159108  ||
+| PD3_FirstPlayable_CasingMode_Intro                                                       | 473573142  ||
+| PD3_FirstPlayable_CasingMode_Loop                                                        | 359468233  ||
+| PD3_FirstPlayable_Stealth_Intro                                                          | 370739753  ||
+| PD3_FirstPlayable_Stealth_Intensity01                                                    | 509695083  ||
+| PD3_FirstPlayable_Stealth_Intensity03                                                    | 460844186  ||
+| PD3_FirstPlayable_Stealth_Intensity04                                                    | 422731441  ||
+| PD3_FirstPlayable_Stealth_Intensity05                                                    | 1029892376 ||
+
+### 99 Boxes / CargoDock
+| Name                                                                                     | Wwise Id   | Notes                   |
+|:-----------------------------------------------------------------------------------------|:-----------|:------------------------|
+| CargoDocks_Anticipation_Intro_132bpm_16bars_2beatsPreEntry_v02                           | 541867996  ||
+| CargoDocks_Anticipation_Intro_132bpm_16bars_2beatsPreEntry                               | 460614264  ||
+| CragoDocks_Anticipation_Loop_132bpm_4bars                       						   | 772855295  ||
+| CargoDocks_Assault_Intro_132bpm_4bars	                                                   | 204004919  ||
+| CargoDocks_Assault_Loop_v05                                                              | 415888957  ||
+| CargoDocks_Control_Intro_132bpm_2bars_1beatPreEntry                                      | 625916298  ||
+| CargoDocks_Control_Loop_132bpm_24bars                                                    | 731580475 	||
+| ArmoredTransport_Transition_Control_To_Anticipation_166bpm_1barPreEntry                  | 380854622  ||
+| ArmoredTransport_Transition_Stealth01_To_Stealth02_166bpm_1barPreEntry                   | 383061978  ||
+| ArmoredTransport_Transition_Stealth02_To_Stealth03_166bpm_2beatsPreEntry                 | 1037935768 ||
+| CargoDocks_Stealth_Intensity01_132bpm_64bars_1beatPreEntry                               | 328288405  ||
+| CargoDocks_Stealth_Intensity02_132bpm_64bars_1beatPreEntry                               | 609906088  ||
+| CargoDocks_Stealth_Intensity03_132bpm_64bars_1beatPreEntry                               | 920213251  ||
+| CargoDocks_Stealth_Intensity04_132bpm_64bars_1beatPreEntry                               | 358587711  ||
+| CargoDocks_Stealth_Intensity05_132bpm_64bars_2beatPreEntry                               | 344214605  ||
+
+### Touch The Sky / Penthouse
+| Name                                                                                     | Wwise Id   | Notes                                  |
+|:-----------------------------------------------------------------------------------------|:-----------|:---------------------------------------|
+| Penthouse_Anticipation_Intro_135bpm_20bars_1beatPreEntry_v02                             | 268000829  ||
+| Penthouse_Anticipation_Loop_135bpm_2bars                                                 | 777176101  ||
+| Penthouse_Assault_Intro_135bpm_4bars_v02	                                               | 358610338  ||
+| Penthouse_Assault_Loop_v02                                                               | 320233637  ||
+| Penthouse_Control_Loop_135bpm_32bars                                                     | 168473583  ||
+| Penthouse_Transition_Assault_to_Control_135bpm_2bars_3beatsPreEntry                      | 911302249 	||
+| Penthouse_Transition_Stealth01_to_Stealth02_132bpm_2beatPreEntry                         | 953701553  | one of these two are incorrectly named |
+| Penthouse_Transition_Stealth01_to_Stealth02_132bpm_1beatPreEntry                         | 467856762  ||
+| Penthouse_Transition_Stealth04_to_Stealth05_132bpm_2beatsPreEntry                        | 911145171  ||
+| Penthouse_Stealth_Intensity01_135bpm_32bars                                              | 865038590  ||
+| Penthouse_Stealth_Intensity02_135bpm_32bars                                              | 969130047  ||
+| Penthouse_Stealth_Intensity03_135bpm_64bars                                              | 795731740  ||
+| Penthouse_Stealth_Intensity04_135bpm_64bars_1beatPreEntry                                | 481388304  ||
+| Penthouse_Stealth_Intensity05_135bpm_64bars_2beatsPreEntry                               | 205804657  ||
 
 ### Other / Menus
 | Name                   | Wwise Id   | Notes                                             |

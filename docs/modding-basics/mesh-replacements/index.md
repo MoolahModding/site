@@ -31,10 +31,10 @@ A guide on replacing skeletal meshes is not yet available.
    This is sometimes necessary to remove masking being applied to the model.
    You can easily scale them down to invisible by selecting the entire UV,
    then inputting S (for scale) then 0 (for size 0). Then hit enter.
-5. Add an empty material assigned to a face, and make it the first slot.
+4. Add an empty material assigned to a face, and make it the first slot.
    This is sometimes necessary to remove masking being applied to the model.
    It is not the case with all models, however, it's a good habit to include it.
-6. Export the model as `.fbx` with the following settings:
+5. Export the model as `.fbx` with the following settings:
 
 ![blender export settings](assets/blender-export.png)
 

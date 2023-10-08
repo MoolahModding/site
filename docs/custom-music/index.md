@@ -133,8 +133,7 @@ Once done, save and repackage your mod, and you'll find your audio replacement p
 | PD3_MainTheme_Option02 | 1028929042 | Identical to 1033817546, but not used by the game |
 | PD3_MainTheme_Option02 | 1033817546 | Main menu theme used in game                      |
 
-### Correctly looping/making a menu music mod with a length superior to the original's
-
+### Looping Custom menu tracks
 The way your 1033817546.ubulk is going to be handled in-game depends on 
 values contained within a .uexp file located in
 

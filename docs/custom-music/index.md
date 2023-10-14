@@ -6,7 +6,7 @@ sidebar_position: 3
 
 ## Prerequisites
 :::note
-You do not require Unreal Engine to be installed to replace the game's audio
+You do not require Unreal Engine to be installed to replace the game's audio (But if you seriously want to, double check the engine version and installation options not path option, that will save your time)
 :::
  - Wwise 2021.1.13.8036 **or** [wwise_pd3](https://github.com/MoolahModding/wwise_pd3/releases/latest)
  - A program that can extract UE4 PAK files ([FModel](https://fmodel.app), UModel)

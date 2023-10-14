@@ -176,6 +176,11 @@ Once done, save and repackage your mod, and you'll find your audio replacement p
 | JewelryStore_Stealth_Intensity03_122bpm_64bars                              | 50641269   |       |
 | JewelryStore_Stealth_Intensity04_122bpm_56bars                              | 1041068951 |       |
 | JewelryStore_Stealth_Intensity05_122bpm_56bars                              | 439832318  |       |
+| JewelryStore_Transition_Stealth01_to_02_1BarPreEntry	                       | 648075674  |       |
+| JewelryStore_Transition_Stealth03_to_04_2BeatsPreEntry	                     | 782118382  |       |
+| JewelryStore_TransitionSegment_Assault_to_Control_122bpm_4bars_1BarPreEntry	| 465774260  |       |
+| JewelryStore_TransitionSegment_Stealth02_to_03_8Bars	                       | 614953566  |       |
+| JewelryStore_TransitionSegment_Stealth04_to_05_2Bars	                       | 986034213  |       |
 
 ### Rock The Cradle / NightClub
 | Name                                                           | Wwise ID   | Notes |

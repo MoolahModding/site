@@ -11,7 +11,7 @@ You do not require Unreal Engine to be installed to replace the game's audio (Bu
  - Wwise 2021.1.13.8036 **or** [wwise_pd3](https://github.com/MoolahModding/wwise_pd3/releases/latest)
  - A program that can extract UE4 PAK files ([FModel](https://fmodel.app), UModel)
  - A program that can pack UE4 PAK files ([repak](https://github.com/trumank/repak), UnrealPak)
- - [Bence's Uexp Utility](https://github.com/bence0585/Bences-uexp-utility) or [HxD Hex Editor](https://mh-nexus.de/en/hxd), to edit the uexp to have the right size
+ - [Bence's Uexp Utility](https://github.com/bence0585/Bences-uexp-utility) or a hex editor such as [HxD](https://mh-nexus.de/en/hxd), to edit the uexp to have the right size
 
 ## Setting up your sound files
 In order for Wwise and wwise_pd3 to work properly, your files must be

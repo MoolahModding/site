@@ -176,3 +176,12 @@ Currently, game uses these Buses, taken from Fmodel:
 ![busses_in_game](assets\bus2.png)
 
 Replicate them in Wwise and you're good to go.
+
+### Sharing your BP mods with custom audio source code
+
+:::note Due to legal reasons, do NOT share the WWise Plugin folder
+:::
+
+Make sure git ignores `<Project>\Content\Plugins\Wwise`.
+
+Your sounds events will be playable by others if you include the WwiseAudio\Events and WwiseAudio\Media folders along with your Soundbank with no issues.

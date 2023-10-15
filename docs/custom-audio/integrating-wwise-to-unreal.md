@@ -21,19 +21,19 @@ This will take some time and about 10-12 gigabytes of free space. You'll be buil
 
 ### File Preparation
 
-First things first, grab a fresh copy of MoolahProject template.
+First things first, grab a fresh copy of MoolahProject template and extract it. If your mod is going to be a BP mod, set up your git folder, and extract the project. Check the notes at the end for a Legal Warning.
 Run the Moolah Template's PAYDAY3.uproj once, go to Editor Preferences > Source Code, set it to Visual Studio 2019. Close Unreal Editor.
 Go to your new empty Moolah Template folder, go to `MoolahProject-main\Plugins\Engine\Plugins\Wwise\Source\AkAudio\Public\` and grab `ESBZAkPoolType.h` and copy it somewhere safe for now.
 Delete the entire Wwise folder in `Plugins\Engine\Plugins`.
 
 Open the Wwise launcher, install the SDK for windows on the version 2021.1.13.8036 - you will have to modify your current install.
 Once that finishes, go to the Unreal tab in the Wwise launcher, click the hamburger menu and go for "Download Wwise integration to use as an engine plugin"
-![WwiseEnginePlugin](assets\wwiseengineplugin.png)
+![WwiseEnginePlugin](assets/wwiseengineplugin.png)
 
 :::note
 Default install version is different, don't forget to change the Wwise version from 2022 to 2021.1.13.8036 and Unreal engine version to 4.27.
 :::
-![WwisePluginDownload](assets\engineplugindownload.png)
+![WwisePluginDownload](assets/engineplugindownload.png)
 
 Once the download is done, go to the folder you downloaded into, grab the entire Wwise folder and paste it under `MoolahProject-main\Plugins\Wwise`.
 In that `MoolahProject-main\Plugins\Wwise` folder, make a new folder called `ThirdParty`.
@@ -109,12 +109,12 @@ If Visual Studio says the solution is incompatible, save the following code bloc
 }
 
 ```
-![VS19Modify](assets\vs19.png)
+![VS19Modify](assets/vs19.png)
 
 ### Finally, getting Wwise and Unreal Editor to integrate
 
 After building is done, launch the uproject. While loading, it might prompt you to replace the existing initbank:
-![initbank](assets\wwiseerror.png)
+![initbank](assets/wwiseerror.png)
 
 Say no to this prompt.
 
@@ -123,7 +123,7 @@ After UE fully launches and you're looking at the empty map, UE will ask if you 
 
 Tab back to Wwise, launch 2021.1.13.8036 version. In the Project Launcher, make a new project. Location doesn't matter. Open up the project, go to Project>Project Settings>Source Settings and change the default conversion settings to PCM Autodetect high.
 
-![Project Settings](assets\wwiseprjs.gif)
+![Project Settings](assets/wwiseprjs.gif)
 
 Save your project afterwards.
 
@@ -134,7 +134,7 @@ Relaunch Unreal Editor. Say No to the Wwise settings prompt again. Go to project
 
 Set Wwise sound data folder to `WwiseAudio` and set the Wwise Project to wherever you set your project back in the actual Wwise program.
 
-![Integration](assets\uewwise1.png)
+![Integration](assets/uewwise1.png)
 
 Ignore the restart prompt if UE asks for it. Go back to Project Settings > Wwise > integration, untick "Use Event-Based Packaging". It might throw you some errors, just click OK through everything.
 
@@ -155,7 +155,7 @@ For adding a custom sound, it goes something like this:
 7. Click Generate All, then save your project.
 
 Once in Unreal Editor, create an AKBank with the EXACT same name as the sound bank in Wwise.
-![akbank](assets\akbank.png)
+![akbank](assets/akbank.png)
 
 :::caution If the file names don't match, you won't get the audiobanks inside Unreal Editor.
 :::
@@ -169,11 +169,11 @@ Once in Unreal Editor, create an AKBank with the EXACT same name as the sound ba
 
 ### Using Main Buses to tie Custom sounds to In Game Audio levels
 You can place dummy Audio Buses in Wwise to tie your audio's volume to in game sliders.
-![Busses](assets\bus1.png)
+![Busses](assets/bus1.png)
 
 Currently, game uses these Buses, taken from Fmodel:
 
-![busses_in_game](assets\bus2.png)
+![busses_in_game](assets/bus2.png)
 
 Replicate them in Wwise and you're good to go.
 

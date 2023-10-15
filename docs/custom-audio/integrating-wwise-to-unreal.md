@@ -7,7 +7,7 @@ sidebar_position: 2
 ## The Integration Process
 
 :::caution Make sure you have time and drive space set for this
-This will take some time and some hardware space. You'll be building the unreal engine and downloading about 10-12 gigabytes. Depending on your computer and net speed, it can take around 30 minutes.
+This will take some time and about 10-12 gigabytes of free space. You'll be building the unreal engine and downloading 2 SDKs. Depending on your computer and net speed, it can take a bit.
 :::
 
 This assumes you have [Visual Studio 2019](https://visualstudio.microsoft.com/vs/older-downloads/) and [Audiokinetic Wwise launcher](https://www.audiokinetic.com/en/download/) installed.

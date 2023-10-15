@@ -6,7 +6,7 @@ sidebar_position: 3
 
 ## Prerequisites
 :::note
-You do not require Unreal Engine to be installed to replace the game's audio (But if you seriously want to, double check the engine version and installation options not path option, that will save your time)
+You do not require Unreal Engine to be installed to replace the game's audio, and this tutorial does not require the Editor to be installed.
 :::
  - Wwise 2021.1.13.8036 **or** [wwise_pd3](https://github.com/MoolahModding/wwise_pd3/releases/latest)
  - A program that can extract UE4 PAK files ([FModel](https://fmodel.app), UModel)
@@ -116,8 +116,8 @@ Once done, save and repackage your mod, and you'll find your audio replacement p
 ### No Rest For The Wicked / BranchBank
 | Name                                                                    | Wwise Id   | Notes                                                              |
 |:------------------------------------------------------------------------|:-----------|:-------------------------------------------------------------------|
-| BranchBank_Anticipation_Intro_130bpm_16bars_v02                         | 856428028  | 1nd half 0s-20s                                                    |
-| BranchBank_Anticipation_Intro_130bpm_16bars                             | 653308651  | 2nd half 25.9s-29.5s                                               |
+| BranchBank_Anticipation_Intro_130bpm_16bars_v02                         | 856428028  | 1st half 0.000s-20.000s                                            |
+| BranchBank_Anticipation_Intro_130bpm_16bars                             | 653308651  | 2nd half 25.538s-29.538s                                           |
 | BranchBank_Anticipation_Loop_130bpm_2bars                               | 382346082  |                                                                    |
 | BranchBank_Assault_Intro_130bpm_2bars                                   | 48507945   |                                                                    |
 | BranchBank_Assault_Loop_v02                                             | 629662482  | Sequence 0.0s-0.1s-59.170s, 1m58.260s-3m11.850s, 59.180s-1m58.250s |

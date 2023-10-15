@@ -4,18 +4,25 @@ sidebar_position: 2
 
 # Integrating Wwise into Unreal Engine
 
+With a proper Wwise integration, you can add new sounds, do some editing like random pitch shifting without editing every sound file or even randomize the sounds played, make new tracks, tie the sound levels to the in game sliders, and make the sound work on both Steam/Epic platforms and Gamepass version.
+
 ## The Integration Process
 
 :::caution Make sure you have time and drive space set for this
 This will take some time and about 10-12 gigabytes of free space. You'll be building the unreal engine and downloading 2 SDKs. Depending on your computer and net speed, it can take a bit.
 :::
 
-This assumes you have [Visual Studio 2019](https://visualstudio.microsoft.com/vs/older-downloads/) and [Audiokinetic Wwise launcher](https://www.audiokinetic.com/en/download/) installed.
+### Prerequisites
+
+- [Visual Studio 2019](https://visualstudio.microsoft.com/vs/older-downloads/)
+- [Audiokinetic Wwise launcher](https://www.audiokinetic.com/en/download/)
+- [A fresh copy of Moolah Project Template](https://github.com/MoolahModding/MoolahProject)
+
 
 ### File Preparation
 
-First things first, grab a fresh copy of MoolahProject [template](https://github.com/MoolahModding/MoolahProject).
-Run the Moolah Template once, go to Editor Preferences > Source Code, set it to Visual Studio 2019. Close Unreal Editor.
+First things first, grab a fresh copy of MoolahProject template.
+Run the Moolah Template's PAYDAY3.uproj once, go to Editor Preferences > Source Code, set it to Visual Studio 2019. Close Unreal Editor.
 Go to your new empty Moolah Template folder, go to `MoolahProject-main\Plugins\Engine\Plugins\Wwise\Source\AkAudio\Public\` and grab `ESBZAkPoolType.h` and copy it somewhere safe for now.
 Delete the entire Wwise folder in `Plugins\Engine\Plugins`.
 

@@ -98,7 +98,7 @@ you can use [Bence's Uexp Utility](https://github.com/bence0585/Bences-uexp-util
 If you package it like this, it will play for a moment in the game,
 but will quickly turn to loud static.
 To fix this issue, open the uexp you extracted earlier in a hex editor software,
-then open the properties window of the ubulk file you Originally extracted.
+then open the properties window of the ubulk file you originally extracted.
 Take the size (in bytes) of the ubulk, and convert it to hex here: https://www.save-editor.com/tools/wse_hex.html
 
 Make sure to have Little Endian box ticked.

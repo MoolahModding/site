@@ -21,13 +21,15 @@ This will take some time and about 10-12 gigabytes of free space. You'll be buil
 
 ### File Preparation
 
-First things first, grab a fresh copy of MoolahProject template and extract it. If your mod is going to be a BP mod, set up your git folder, and extract the project. Check the notes at the end for a Legal Warning.
+First things first, grab a fresh copy of MoolahProject template and extract it. If your mod is going to be a BP mod, please check the notes at the end for a Legal Warning.
+
 Run the Moolah Template's PAYDAY3.uproj once, go to Editor Preferences > Source Code, set it to Visual Studio 2019. Close Unreal Editor.
 Go to your new empty Moolah Template folder, go to `MoolahProject-main\Plugins\Engine\Plugins\Wwise\Source\AkAudio\Public\` and grab `ESBZAkPoolType.h` and copy it somewhere safe for now.
 Delete the entire Wwise folder in `Plugins\Engine\Plugins`.
 
 Open the Wwise launcher, install the SDK for windows on the version 2021.1.13.8036 - you will have to modify your current install.
 Once that finishes, go to the Unreal tab in the Wwise launcher, click the hamburger menu and go for "Download Wwise integration to use as an engine plugin"
+
 ![WwiseEnginePlugin](assets/wwiseengineplugin.png)
 
 :::note

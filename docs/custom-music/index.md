@@ -2,7 +2,7 @@
 sidebar_position: 3
 ---
 
-# Custom Music
+# Replace in-game Soundtrack
 
 ## Prerequisites
 :::note

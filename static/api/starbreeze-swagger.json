@@ -1,0 +1,617 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Starbreeze Nebula API",
+    "description": "Community made documentation for the API used by PAYDAY 3. If you notice any errors or have any questions, contact `hw12dev` on discord. All of these endpoints, except for those in `Auth` require a valid user access token. **The authors of these API docs in no way condone cheating**",
+    "version": "0.0.0"
+  },
+  "tags": [
+    {
+      "name": "Auth",
+      "description": "Used to authenticate with the api"
+    },
+    {
+      "name": "Users"
+    },
+    {
+      "name": "Public cloudsave records",
+      "description": "Used to retrieve public cloudsave records like the infamy translation table"
+    },
+    {
+      "name": "Items",
+      "description": "Get item data from the server"
+    }
+  ],
+  "paths": {
+    "/iam/v3/oauth/platforms/steam/token": {
+      "post": {
+        "summary": "Used to authenticate with steam",
+        "tags": [
+          "Auth"
+        ],
+        "parameters": [
+          {
+            "name": "platform_token",
+            "description": "Steam auth ticket from the `GetAuthTicketForWebApi` function in the Steamworks API",
+            "in": "url encoded form data",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "macAddress",
+            "description": "The computer's mac address formatted in lowercase",
+            "in": "url encoded form data",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "User response with the auth token and refresh token",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AuthUser"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/iam/v3/public/users/me": {
+      "get": {
+        "summary": "Retrieve data about the user assigned to the access token. Requires auth.",
+        "tags": [
+          "Users"
+        ],
+        "responses": {
+          "200": {
+            "description": "User response without the auth and refresh token",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PublicLocalUserResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/cloudsave/v1/namespaces/pd3/records/infamy-translation-table": {
+      "get": {
+        "summary": "Retrieve the infamy translation table from the server",
+        "tags": [
+          "Public cloudsave records"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GenericCloudsaveResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/cloudsave/v1/namespaces/pd3/records/security-firm-rotation": {
+      "get": {
+        "summary": "Retrieve the current security providers rotation from the server",
+        "tags": [
+          "Public cloudsave records"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GenericCloudsaveResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/platform/public/namespaces/pd3/items/byCriteria": {
+      "get": {
+        "summary": "Get all items from server",
+        "tags": [
+          "Items"
+        ],
+        "parameters": [
+          {
+            "name": "limit",
+            "in": "query",
+            "required": false,
+            "example": 20,
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ItemsResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/platform/public/namespaces/pd3/users/{userId}/entitlements": {
+      "get": {
+        "summary": "Get owned entitlements from user, only works for user the token is assigned to",
+        "tags": [
+          "Items"
+        ],
+        "parameters": [
+          {
+            "name": "userId",
+            "in": "path",
+            "schema": {
+              "type": "string"
+            },
+            "required": true
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "required": false,
+            "example": 20,
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/EntitlementsResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Item": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string"
+          },
+          "itemId": {
+            "type": "string"
+          },
+          "baseAppId": {
+            "type": "string"
+          },
+          "sku": {
+            "type": "string"
+          },
+          "namespace": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "entitlementType": {
+            "type": "string",
+            "enum": [
+              "DURABLE",
+              "CONSUMABLE"
+            ]
+          },
+          "useCount": {
+            "type": "integer"
+          },
+          "stackable": {
+            "type": "boolean"
+          },
+          "categoryPath": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string"
+          },
+          "listable": {
+            "type": "boolean"
+          },
+          "purchasable": {
+            "type": "boolean"
+          },
+          "itemType": {
+            "type": "string"
+          },
+          "regionData": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ItemRegionData"
+            }
+          },
+          "tags": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "features": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": [
+                "iap-sync-steam"
+              ]
+            }
+          },
+          "maxCountPerUser": {
+            "type": "integer",
+            "default": -1
+          },
+          "maxCount": {
+            "type": "integer",
+            "default": -1
+          },
+          "region": {
+            "type": "string",
+            "enum": [
+              "SE"
+            ]
+          },
+          "language": {
+            "type": "string"
+          },
+          "createdAt": {
+            "type": "string",
+            "format": "date"
+          },
+          "updatedAt": {
+            "type": "string",
+            "format": "date"
+          }
+        }
+      },
+      "Entitlement": {
+        "type": "object",
+        "properties": {
+          "clazz": {
+            "type": "string"
+          },
+          "createdAt": {
+            "type": "string",
+            "format": "date"
+          },
+          "grantedAt": {
+            "type": "string",
+            "format": "date"
+          },
+          "id": {
+            "type": "string"
+          },
+          "itemId": {
+            "type": "string"
+          },
+          "itemNamespace": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "namespace": {
+            "type": "string"
+          },
+          "sku": {
+            "type": "string"
+          },
+          "source": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string"
+          },
+          "type": {
+            "type": "string"
+          },
+          "updatedAt": {
+            "type": "string"
+          },
+          "useCount": {
+            "type": "integer"
+          },
+          "userId": {
+            "type": "string"
+          }
+        }
+      },
+      "ItemRegionData": {
+        "type": "object",
+        "properties": {
+          "price": {
+            "type": "integer"
+          },
+          "discountPercentage": {
+            "type": "integer"
+          },
+          "discountAmount": {
+            "type": "integer"
+          },
+          "discountedPrice": {
+            "type": "integer"
+          },
+          "currencyCode": {
+            "type": "string",
+            "enum": [
+              "CASH",
+              "GOLD",
+              "CRED",
+              "USD"
+            ]
+          },
+          "currencyType": {
+            "type": "string",
+            "enum": [
+              "VIRTUAL"
+            ]
+          },
+          "currencyNamespace": {
+            "type": "string"
+          },
+          "purchaseAt": {
+            "type": "string",
+            "format": "date"
+          },
+          "discountPurchaseAt": {
+            "type": "string",
+            "format": "date"
+          }
+        }
+      },
+      "ItemsResponse": {
+        "type": "object",
+        "properties": {
+          "data": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Item"
+            }
+          },
+          "paging": {
+            "type": "object"
+          }
+        }
+      },
+      "EntitlementsResponse": {
+        "type": "object",
+        "properties": {
+          "data": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Entitlement"
+            }
+          },
+          "paging": {
+            "type": "object"
+          }
+        }
+      },
+      "Ban": {
+        "type": "object",
+        "properties": {
+          "ban": {
+            "type": "string"
+          },
+          "disabledDate": {
+            "type": "string",
+            "format": "date"
+          },
+          "enabled": {
+            "type": "boolean"
+          },
+          "endDate": {
+            "type": "string",
+            "format": "date"
+          },
+          "targetedNamespace": {
+            "type": "string"
+          }
+        }
+      },
+      "GenericCloudsaveResponse": {
+        "type": "object",
+        "properties": {
+          "created_at": {
+            "type": "string",
+            "format": "date"
+          },
+          "key": {
+            "type": "string"
+          },
+          "namespace": {
+            "type": "string"
+          },
+          "set_by": {
+            "type": "string"
+          },
+          "updated_at": {
+            "type": "string",
+            "format": "date"
+          },
+          "value": {
+            "type": "object"
+          }
+        }
+      },
+      "NamespaceRole": {
+        "type": "object",
+        "properties": {
+          "namespace": {
+            "type": "string"
+          },
+          "roleId": {
+            "type": "string"
+          }
+        }
+      },
+      "AuthUser": {
+        "type": "object",
+        "properties": {
+          "access_token": {
+            "type": "string",
+            "description": "JWT token"
+          },
+          "bans": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Ban"
+            }
+          },
+          "display_name": {
+            "type": "string"
+          },
+          "expires_in": {
+            "type": "integer"
+          },
+          "is_comply": {
+            "type": "boolean"
+          },
+          "jflgs": {
+            "type": "integer"
+          },
+          "namespace": {
+            "type": "string"
+          },
+          "namespace_roles": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/NamespaceRole"
+            }
+          },
+          "platform_id": {
+            "type": "string"
+          },
+          "platform_user_id": {
+            "type": "string"
+          },
+          "refresh_expires_in": {
+            "type": "integer"
+          },
+          "refresh_token": {
+            "type": "string"
+          },
+          "roles": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "scope": {
+            "type": "string"
+          },
+          "token_type": {
+            "type": "string"
+          },
+          "user_id": {
+            "type": "string"
+          }
+        }
+      },
+      "PublicLocalUserResponse": {
+        "type": "object",
+        "properties": {
+          "authType": {
+            "type": "string"
+          },
+          "bans": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Ban"
+            }
+          },
+          "country": {
+            "type": "string"
+          },
+          "createdAt": {
+            "type": "string",
+            "format": "date"
+          },
+          "dateOfBirth": {
+            "type": "string",
+            "format": "date"
+          },
+          "deletionStatus": {
+            "type": "boolean"
+          },
+          "display_name": {
+            "type": "string"
+          },
+          "emailAddress": {
+            "type": "string"
+          },
+          "emailVerified": {
+            "type": "boolean"
+          },
+          "enabled": {
+            "type": "boolean"
+          },
+          "lastDateOfBirthChangedTime": {
+            "type": "string",
+            "format": "date"
+          },
+          "lastEnabledChangedTime": {
+            "type": "string",
+            "format": "date"
+          },
+          "namespace": {
+            "type": "string"
+          },
+          "namespaceRoles": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/NamespaceRole"
+            }
+          },
+          "oldEmailAddress": {
+            "type": "string"
+          },
+          "phoneVerified": {
+            "type": "boolean"
+          },
+          "roles": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "userId": {
+            "type": "string"
+          },
+          "userName": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

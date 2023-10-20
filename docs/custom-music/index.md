@@ -9,7 +9,7 @@ sidebar_position: 3
 You do not require Unreal Engine Editor to be installed to replace the game's audio, and this tutorial does not require Unreal Engine Editor to be installed.
 :::
  - Wwise 2021.1.13.8036 **or** [wwise_pd3](https://github.com/MoolahModding/wwise_pd3/releases/latest)
- - A program that can extract UE4 PAK files, for example: [FModel](https://fmodel.app), UModel
+ - A program that can extract UE4 PAK files, for example: [FModel](https://fmodel.app), [UModel](https://github.com/gildor2/UEViewer)
  - A program that can pack UE4 PAK files, for example: [repak](https://github.com/trumank/repak), UnrealPak
  - [Bence's Uexp Utility](https://github.com/bence0585/Bences-uexp-utility) or a hex editor such as [HxD](https://mh-nexus.de/en/hxd), to edit the uexp to have the right size
 

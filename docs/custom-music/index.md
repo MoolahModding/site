@@ -2,7 +2,7 @@
 sidebar_position: 3
 ---
 
-# Replace soundtrack
+# Audio editing
 
 ## Prerequisites
 :::note

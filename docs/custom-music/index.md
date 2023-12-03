@@ -265,6 +265,28 @@ Once done, save and repackage your mod, and you'll find your audio replacement p
 | Penthouse_Stealth_Intensity04_135bpm_64bars_1beatPreEntry           | 481388304 |                                        |
 | Penthouse_Stealth_Intensity05_135bpm_64bars_2beatsPreEntry          | 205804657 |                                        |
 
+### Turbid Station / MurkStation
+| Name                                                                     | Wwise ID   | Notes |
+|:-------------------------------------------------------------------------|:-----------|:------|
+| MurkyStation_Stealth_Intensity_01_128bpm                                 | 87065999   |       |
+| MurkyStation_Stealth_Intensity_02_132bpm                                 | 350660877  |       |
+| MurkyStation_Stealth_Intensity_03_136bpm                                 | 698026964  |       |
+| MurkyStation_Stealth_Intensity_04_140bpm                                 | 816791886  |       |
+| MurkyStation_Stealth_Intensity_05_140bpm                                 | 765608166  |       |
+
+### Cook Off / CookOff
+| Name                                                                | Wwise ID  | Notes |
+|:--------------------------------------------------------------------|:----------|:------|
+| CookOff_Anticipation_Intro_2beatsPreEntry_v02                       | 1026053351|       |
+| CookOff_Anticipation_Loop                                           | 534656696 |       |
+| CookOff_Assault_Intro                                               | 410036757 |       |
+| CookOff_Assault_v01                                                 | 14162135  |       |
+| CookOff_Control_Loop_133bpm_v01                                     | 637801548 |       |
+| CookOff_Transition_AssaultToControl_1bar                            | 137849281 |       |
+| CookOff_Transition_Stealth_To_Control_4bars_1barPreEntry            | 393273365 |       |
+| CookOff_Stealth_Intensity_01_Intro                                  | 666100124 |       |
+| CookOff_Stealth_Intensity_01_Loop                                   | 456457800 |       |
+
 ### Other / Menus
 | Name                   | Wwise ID   | Notes                                             |
 |:-----------------------|:-----------|:--------------------------------------------------|

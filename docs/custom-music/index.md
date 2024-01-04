@@ -2,16 +2,16 @@
 sidebar_position: 3
 ---
 
-# Custom Music
+# Audio editing
 
 ## Prerequisites
 :::note
-You do not require Unreal Engine to be installed to replace the game's audio
+You do not require Unreal Engine Editor to be installed to replace the game's audio, and this tutorial does not require Unreal Engine Editor to be installed.
 :::
- - Wwise 2021.1.13.8036 **or** [wwise_pd3](https://github.com/MoolahModding/wwise_pd3/releases/latest)
- - A program that can extract UE4 PAK files (FModel, UModel)
- - A program that can pack UE4 PAK files (repak, UnrealPak)
- - Bence's Uexp Utility, to edit the uexp to have the right size: https://github.com/bence0585/Bences-uexp-utility
+ - [Wwise](https://www.audiokinetic.com/en/products/wwise) 2021.1.13.8036 **or** [wwise_pd3](https://github.com/MoolahModding/wwise_pd3/releases/latest)
+ - A program that can extract UE4 PAK files, for example: [FModel](https://fmodel.app), [UModel](https://github.com/gildor2/UEViewer)
+ - A program that can pack UE4 PAK files, for example: [repak](https://github.com/trumank/repak), UnrealPak
+ - [Bence's Uexp Utility](https://github.com/bence0585/Bences-uexp-utility) or a hex editor such as [HxD](https://mh-nexus.de/en/hxd), to edit the uexp to have the right size
 
 ## Setting up your sound files
 In order for Wwise and wwise_pd3 to work properly, your files must be
@@ -97,13 +97,14 @@ you can use [Bence's Uexp Utility](https://github.com/bence0585/Bences-uexp-util
 
 If you package it like this, it will play for a moment in the game,
 but will quickly turn to loud static.
-To fix this issue, open the uexp you extracted earlier in a hex editor,
-then open the properties window of the ubulk you originally extracted.
+To fix this issue, open the uexp you extracted earlier in a hex editor software,
+then open the properties window of the ubulk file you originally extracted.
 Take the size (in bytes) of the ubulk, and convert it to hex here: https://www.save-editor.com/tools/wse_hex.html
 
 Make sure to have Little Endian box ticked.
 Copy the converted hex and search for it in the hex editor with CTRL+F.
 You should find this hex string twice in the hex editor.
+(For example: "8C 6C 85 01 8C 6C 85 01" mean 25,521,292 bytes; "40 5C C1 00 40 5C C1 00" mean 12,672,064 bytes)
 Now open the properties of your new ubulk which was the wem file you made.
 Convert that file size (in bytes) to hex as well.
 Finally, replace those 2 instances of the old file's size in hex with the new hex converted size you obtained.
@@ -113,22 +114,28 @@ Once done, save and repackage your mod, and you'll find your audio replacement p
 
 ## List of Wwise IDs for the soundtrack
 ### No Rest For The Wicked / BranchBank
-| Name                                                                    | Wwise Id   | Notes |
-|:------------------------------------------------------------------------|:-----------|:------|
-| BranchBank_Anticipation_Intro_130bpm_16bars                             | 653308651  |       |
-| BranchBank_Anticipation_Loop_130bpm_2bars                               | 382346082  |       |
-| BranchBank_Assault_Intro_130bpm_2bars                                   | 48507945   |       |
-| BranchBank_Assault_Loop_v02                                             | 629662482  |       |
-| BranchBank_Control_Loop_130bpm_32bars                                   | 653896124  |       |
-| BranchBank_Transition_Assault_to_Control_130bpm_2Bar_2beatsPreEntry_v02 | 632657818  |       |
-| BranchBank_Transition_Assault_to_Control_02_130bpm_1beatPreEntry        | 786633665  |       |
-| BranchBank_Transition_Assault_C_to_Control_130bpm_1beatPreEntry_v03     | 160788638  |       |
-| BranchBank_Transition_Assault_D_to_Control_130bpm_1beatPreEntry         | 377552255  |       |
-| BranchBank_Transition_Stealth01_to_Control_130bpm_2barsPreEntry         | 725612459  |       |
-| BranchBank_Transition_Stealth01_to_Stealth02_130bpm_2beatsPreEntry      | 839959304  |       |
-| BranchBank_Transition_Stealth02_to_Stealth03_130bpm_3beatsPreEntry      | 793440025  |       |
-| BranchBank_Transition_Stealth03_to_Stealth04_130bpm_1Bar_2beatsPreEntry | 1057654261 |       |
-| BranchBank_Transition_Stealth04_to_Stealth05_130bpm_1Bar_2beatsPreEntry | 532610310  |       |
+| Name                                                                    | Wwise Id   | Notes                                                              |
+|:------------------------------------------------------------------------|:-----------|:-------------------------------------------------------------------|
+| BranchBank_Anticipation_Intro_130bpm_16bars_v02                         | 856428028  | 1st half 0.000s-20.000s                                            |
+| BranchBank_Anticipation_Intro_130bpm_16bars                             | 653308651  | 2nd half 25.538s-29.538s                                           |
+| BranchBank_Anticipation_Loop_130bpm_2bars                               | 382346082  |                                                                    |
+| BranchBank_Assault_Intro_130bpm_2bars                                   | 48507945   |                                                                    |
+| BranchBank_Assault_Loop_v02                                             | 629662482  | Sequence 0.0s-0.1s-59.170s, 1m58.260s-3m11.850s, 59.180s-1m58.250s |
+| BranchBank_Control_Loop_130bpm_32bars                                   | 653896124  |                                                                    |
+| BranchBank_Transition_Assault_to_Control_130bpm_2Bar_2beatsPreEntry_v02 | 632657818  |                                                                    |
+| BranchBank_Transition_Assault_to_Control_02_130bpm_1beatPreEntry        | 786633665  |                                                                    |
+| BranchBank_Transition_Assault_C_to_Control_130bpm_1beatPreEntry_v03     | 160788638  |                                                                    |
+| BranchBank_Transition_Assault_D_to_Control_130bpm_1beatPreEntry         | 377552255  |                                                                    |
+| BranchBank_Transition_Stealth01_to_Control_130bpm_2barsPreEntry         | 725612459  |                                                                    |
+| BranchBank_Transition_Stealth01_to_Stealth02_130bpm_2beatsPreEntry      | 839959304  |                                                                    |
+| BranchBank_Transition_Stealth02_to_Stealth03_130bpm_3beatsPreEntry      | 793440025  |                                                                    |
+| BranchBank_Transition_Stealth03_to_Stealth04_130bpm_1Bar_2beatsPreEntry | 1057654261 |                                                                    |
+| BranchBank_Transition_Stealth04_to_Stealth05_130bpm_1Bar_2beatsPreEntry | 532610310  |                                                                    |
+| BranchBrank_Stealth_Intensity01_130bpm_64bars                           | 437570861  |                                                                    |
+| BranchBrank_Stealth_Intensity02_130bpm_64bars                           | 744674454  |                                                                    |
+| BranchBrank_Stealth_Intensity03_130bpm_64bars                           | 134809320  |                                                                    |
+| BranchBrank_Stealth_Intensity04_130bpm_32bars                           | 936177283  |                                                                    |
+| BranchBrank_Stealth_Intensity05_130bpm_48bars	                          | 979808346  |                                                                    |
 
 ### Road Rage / ArmouredTransport
 | Name                                                                     | Wwise ID   | Notes                  |
@@ -169,6 +176,11 @@ Once done, save and repackage your mod, and you'll find your audio replacement p
 | JewelryStore_Stealth_Intensity03_122bpm_64bars                              | 50641269   |       |
 | JewelryStore_Stealth_Intensity04_122bpm_56bars                              | 1041068951 |       |
 | JewelryStore_Stealth_Intensity05_122bpm_56bars                              | 439832318  |       |
+| JewelryStore_Transition_Stealth01_to_02_1BarPreEntry                        | 648075674  |       |
+| JewelryStore_Transition_Stealth03_to_04_2BeatsPreEntry                      | 782118382  |       |
+| JewelryStore_TransitionSegment_Assault_to_Control_122bpm_4bars_1BarPreEntry | 465774260  |       |
+| JewelryStore_TransitionSegment_Stealth02_to_03_8Bars                        | 614953566  |       |
+| JewelryStore_TransitionSegment_Stealth04_to_05_2Bars                        | 986034213  |       |
 
 ### Rock The Cradle / NightClub
 | Name                                                           | Wwise ID   | Notes |

@@ -220,7 +220,7 @@ Once done, save and repackage your mod, and you'll find your audio replacement p
 | ArtGallery_Stealth_Intensity04_92bpm_32bars                       | 285174518 |       |
 | ArtGallery_Stealth_Intensity05_92bpm_32bars                       | 566464909 |       |
 
-### Golde and Sharke / FirstPlayable
+### Gold and Sharke / FirstPlayable
 | Name                                                                | Wwise ID   | Notes |
 |:--------------------------------------------------------------------|:-----------|:------|
 | PD3_FirstPlayable_Anticipation_Intro_v02                            | 612679541  |       |
@@ -276,6 +276,49 @@ Once done, save and repackage your mod, and you'll find your audio replacement p
 | Penthouse_Stealth_Intensity03_135bpm_64bars                         | 795731740 |                                        |
 | Penthouse_Stealth_Intensity04_135bpm_64bars_1beatPreEntry           | 481388304 |                                        |
 | Penthouse_Stealth_Intensity05_135bpm_64bars_2beatsPreEntry          | 205804657 |                                        |
+
+### Turbid Station / MurkyStation
+| Name                                                                     | Wwise ID   | Notes |
+|:-------------------------------------------------------------------------|:-----------|:------|
+| MurkyStation_Stealth_Intensity_01_128bpm                                 | 87065999   |       |
+| MurkyStation_Stealth_Intensity_02_132bpm                                 | 350660877  |       |
+| MurkyStation_Stealth_Intensity_03_136bpm                                 | 698026964  |       |
+| MurkyStation_Stealth_Intensity_04_140bpm                                 | 816791886  |       |
+| MurkyStation_Stealth_Intensity_05_140bpm                                 | 765608166  |       |
+
+### Cook Off / CookOff
+| Name                                                                | Wwise ID  | Notes |
+|:--------------------------------------------------------------------|:----------|:------|
+| CookOff_Anticipation_Intro_2beatsPreEntry_v02                       | 1026053351|       |
+| CookOff_Anticipation_Loop                                           | 534656696 |       |
+| CookOff_Assault_Intro                                               | 410036757 |       |
+| CookOff_Assault_v01                                                 | 14162135  |       |
+| CookOff_Control_Loop_133bpm_v01                                     | 637801548 |       |
+| CookOff_Transition_AssaultToControl_1bar                            | 137849281 |       |
+| CookOff_Transition_Stealth_To_Control_4bars_1barPreEntry            | 393273365 |       |
+| CookOff_Stealth_Intensity_01_Intro                                  | 666100124 |       |
+| CookOff_Stealth_Intensity_01_Loop                                   | 456457800 |       |
+
+### Syntax Error / DataCenter
+| Name                                                                | Wwise ID  | Notes |
+|:--------------------------------------------------------------------|:----------|:------|
+| DataCenter_Anticipation_Intro_1beatPreEntry_126bpm                  | 176527521 |       |
+| DataCenter_Anticipation_Loop_                                       | 778295272 |       |
+| DataCenter_Assault_Intro_v02                                        | 752833989 |       |
+| DataCenter_Assault_v01                                              | 968396796 |       |
+| DataCenter_Control_Loop_126bpm                                      | 35662039  |       |
+| DataCenter_Transition_ControlToAssault_1bar_126bpm                  | 151434543 |       |
+| DataCenter_Transition_ControlToAnticipation_2beatsPreEntry_126bpm   | 552113246 |       |
+| DataCenter_Transition_Stealth_A                                     | 487132225 |       |
+| DataCenter_Transition_Stealth_B                                     | 764921585 |       |
+| DataCenter_Transition_Stealth_C                                     | 398663136 |       |
+| DataCenter_Transition_Stealth_D                                     | 417392941 |       |
+| DataCenter_Stealth_Intensity_01                                     | 207221443 |       |
+| DataCenter_Stealth_Intensity_02                                     | 356391119 |       |
+| DataCenter_Stealth_Intensity_03_v02                                 | 1026758712|       |
+| DataCenter_Stealth_Intensity_04                                     | 724347796 |       |
+| DataCenter_Stealth_Intensity_05                                     | 193875542 |       |
+
 
 ### Other / Menus
 | Name                   | Wwise ID   | Notes                                             |

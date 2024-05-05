@@ -29,11 +29,11 @@ You can set this easily by putting the launch option in the steam launch options
 ![Steam Launch Options](assets/steam-launchoptions.png)
 
 ### Cooking
-PAYDAY 3 requires all of its files to be cooked,
+PAYDAY 3 requires all of its files to be cooked before they can be packaged into a mod,
 so you must cook your game files everytime you want to package and test your mod.
 
 You can cook your game files by opening the `File` menu and clicking `Cook Content for Windows`.
-Once cooked, your files will be located at `{UE4ProjectDir}/Saved/Cooked/WindowsNoEditor/`.
+Once cooked, your files will be located at `{UE4ProjectDir}/Saved/Cooked/WindowsNoEditor/PAYDAY3/Content`.
 
 ![UE4 Cook](assets/ue4-cookoption.png)
 
@@ -45,7 +45,9 @@ In order to package your game files, you must make sure you have [cooked](#cooki
 Once cooked, you must copy out all the files your mod replaces or adds, like maps, models, textures, etc.
 When copying you must make sure the folder structure stays the same.
 For example, a custom map at `{UE4ProjectDir}/Saved/Cooked/WindowsNoEditor/PAYDAY3/Maps/CoolMap/CoolMap.umap`
-should be copied to `{MyNewMod_P}/PAYDAY3/Maps/CoolMap/CoolMap.umap`.
+should be copied to `{MyNewMod_P}/PAYDAY3/Content/Maps/CoolMap/CoolMap.umap`.
+
+# Remember: The Mod structure needs to be identical to the Unreal Project structure
 
 Once all your files are copied, you must now package the `MyNewMod_P` with the tool of your choice.
 The tool you use is up to personal preference, but the recommended tool is [repak by trumank](https://github.com/trumank/repak)
@@ -72,11 +74,11 @@ See the documentation on [Packaging](../packaging) for more info.
 :::
 
 ## Load Order
-Unreal Engine loads files in PAKs in alphabetical order, so if you want your mod to load after another mod,
+Unreal Engine loads PAK-Files in alphabetical order, so if you want your mod to load after another mod,
 you must make sure your mod's name comes after the other mod's name alphabetically.
 It is best to prefix your mod's name with the letter `z`, ensuring it will load last and overwrite any file you need it to.
 
 ## Viewing PAYDAY 3's PAK files
-In order to view PAYDAY 3's PAK files, you must first obtain the AES key.
-While we cannot distribute the AES key ourselves, you can dump it very easily.
+In order to view PAYDAY 3's PAK files using FModel, you must first obtain the AES key.
+While we cannot distribute the AES key, you can dump it very easily.
 Once the AES key is obtained, you can open PAYDAY 3's files in the program of your choice such as [FModel](https://github.com/4sval/FModel/releases).

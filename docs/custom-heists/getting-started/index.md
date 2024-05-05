@@ -8,7 +8,7 @@ In order to begin with mapping, you must first get accustomed to Unreal Engine's
 As of writing, the preferred place to store your map is in `Content/Maps/{ModName}`.
 
 :::tip
-We recommend you join the ModWorkShop Discord server for questions
+We recommend you join the Modworkshop Discord server for questions
 and to interact with experienced members of the modding community.
 :::
 

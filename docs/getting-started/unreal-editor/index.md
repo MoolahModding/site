@@ -47,7 +47,9 @@ When copying you must make sure the folder structure stays the same.
 For example, a custom map at `{UE4ProjectDir}/Saved/Cooked/WindowsNoEditor/PAYDAY3/Maps/CoolMap/CoolMap.umap`
 should be copied to `{MyNewMod_P}/PAYDAY3/Content/Maps/CoolMap/CoolMap.umap`.
 
-# Remember: The Mod structure needs to be identical to the Unreal Project structure
+:::info Reminder
+The mod structure needs to be identical to the Unreal Project structure, as the Mod wont work otherwise.
+:::
 
 Once all your files are copied, you must now package the `MyNewMod_P` with the tool of your choice.
 The tool you use is up to personal preference, but the recommended tool is [repak by trumank](https://github.com/trumank/repak)

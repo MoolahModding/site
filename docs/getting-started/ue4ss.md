@@ -7,7 +7,7 @@ sidebar_position: 2
 UE4SS is a tool for modding with Lua, C++ and loading blueprint mods.
 
 ## Download
-You can download UE4SS from [the Releases page of the ModWorkshop for UE4SS](https://modworkshop.net/mod/47771)
+You can download UE4SS from [the Downloads page of the ModWorkshop for UE4SS](https://modworkshop.net/mod/47771)
 
 ## Installation
 Steam/Epic Install

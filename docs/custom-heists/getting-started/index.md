@@ -5,7 +5,7 @@ sidebar_position: 1
 # Getting Started with Mapping
 
 In order to begin with mapping, you must first get accustomed to Unreal Engine's editor and create a map.
-As of writing, the preferred place to store your map is in `Content/Maps/{ModName}`.
+As of writing, the preferred place to store your map is in `PAYDAY3/Content/Mods/.../Maps/{ModName}`.
 
 :::tip
 We recommend you join the ModWorkshop Discord server for questions

@@ -10,7 +10,7 @@ If PAYDAY 3 upgrades to Unreal Engine 5, this documentation will become obsolete
 :::
 
 ## Intro
-To begin using the Unreal Editor, you must ensure you have version 4.27 installed.
+To begin using the Unreal Editor, you must ensure you have version 4.27.2 installed.
 You can either compile it yourself from source or you can install it through the Epic Games Launcher.
 
 :::note
@@ -44,7 +44,7 @@ In order to package your game files, you must make sure you have [cooked](#cooki
 
 Once cooked, you must copy out all the files your mod replaces or adds, like maps, models, textures, etc.
 When copying you must make sure the folder structure stays the same.
-For example, a custom map at `{UE4ProjectDir}/Saved/Cooked/WindowsNoEditor/PAYDAY3/Maps/CoolMap/CoolMap.umap`
+For example, a custom map at `{UE4ProjectDir}/Saved/Cooked/WindowsNoEditor/PAYDAY3/Content/Maps/CoolMap/CoolMap.umap`
 should be copied to `{MyNewMod_P}/PAYDAY3/Content/Maps/CoolMap/CoolMap.umap`.
 
 :::info Reminder
@@ -64,8 +64,8 @@ Packed 2 files to PackagingStagingFolder.pak
 4. To verify proper packaging, you can run `repak.exe list MyNewMod_P.pak` and it will list all the paths e.g.:
 ```
 C:\PD3_Modding> repak.exe list MyNewMod_P.pak
-PAYDAY3/Maps/CoolMap/CoolMap.umap
-PAYDAY3/Maps/CoolMap/CoolMap.uexp
+PAYDAY3/Content/Maps/CoolMap/CoolMap.umap
+PAYDAY3/Content/Maps/CoolMap/CoolMap.uexp
 ```
 
 Once packaged, place your pak files in `{InstallFolder}/PAYDAY3/Content/Paks/~mods/` (create ~mods if it does not exist) and your mod should be loaded by PAYDAY 3.

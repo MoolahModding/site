@@ -307,6 +307,24 @@ Once done, save and repackage your mod, and you'll find your audio replacement p
 | DataCenter_Stealth_Intensity_04                                     | 724347796 |       |
 | DataCenter_Stealth_Intensity_05                                     | 193875542 |       |
 
+### Boys in Blue / Fort
+| Name                                                                | Wwise ID  | Notes |
+|:--------------------------------------------------------------------|:----------|:------|
+| Fort_Anticipation_Intro                                             | 917453918 |       |
+| Fort_Anticipation_Loop                                              | 690715365 |       |
+| Fort_Assault_Intro                                                  | 734689897 |       |
+| Fort_Assault_v02                                                    | 855696868 |       |
+| Fort_Control_Loop_v01                                               | 548760048 |       |
+| Fort_Transition_Anticipation_to_Assault                             | 433954310 |       |
+| Fort_Transition_Assault_to_Control                                  | 296845369 |       |
+| Fort_Transition_stealth_04_to_stealth_05_172bpm_1beatPreEntry       | 103742729 |       |
+| Fort_Stealth_Intro_172bpm_2bars                                     | 677614538 |       |
+| Fort_Stealth_Intensity01_172bpm_64bars                              | 684935927 |       |
+| Fort_Stealth_Intensity02_172bpm_64bars                              | 231407    |       |
+| Fort_Stealth_Intensity03_172bpm_80bars_1barPreEntry_v02             | 48846632  |       |
+| Fort_Stealth_Intensity04_Intro_172bpm_1bars                         | 582535798 |       |
+| Fort_Stealth_Intensity04_172bpm_80bars_1barPreEntry_v02             | 398614934 |       |
+| Fort_Stealth_Intensity05_172bpm_96bars_v02                          | 1042788038|       |
 
 ### Other / Menus
 | Name                   | Wwise ID   | Notes                                             |

@@ -324,6 +324,7 @@ Once done, save and repackage your mod, and you'll find your audio replacement p
 | Fort_Stealth_Intensity03_172bpm_80bars_1barPreEntry_v02             | 48846632  |       |
 | Fort_Stealth_Intensity04_Intro_172bpm_1bars                         | 582535798 |       |
 | Fort_Stealth_Intensity04_172bpm_80bars_1barPreEntry_v02             | 398614934 |       |
+| Fort_Stealth_Intensity05_172bpm_96bars_v02                          | 1042788038|       |
 
 ### Other / Menus
 | Name                   | Wwise ID   | Notes                                             |

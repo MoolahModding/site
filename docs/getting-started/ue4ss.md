@@ -7,17 +7,19 @@ sidebar_position: 2
 UE4SS is a tool for modding with Lua, C++ and loading blueprint mods.
 
 ## Download
-You can download UE4SS from [the releases page of it's github](https://github.com/UE4SS-RE/RE-UE4SS/releases/latest)
+You can download UE4SS from [the Downloads page of the ModWorkshop for UE4SS](https://modworkshop.net/mod/47771)
 
 ## Installation
-:::caution
-This guide is incomplete, PAYDAY 3 requires a specialized build of UE4SS (case preserving) and some game-specific configs.
-:::
+Steam/Epic Install
+To install, extract the contents of the zip file into {GamePath}\PAYDAY3\PAYDAY3\Binaries\Win64
 
-1. Download the `UE4SS_Xinput` archive from the releases page
-2. Extract the `Mods` directory, `UE4SS-settings.ini` and `xinput1_3.dll` to `{InstallFolder}/PAYDAY3/Binaries/Win64/`
+Gamepass Install
+To install, extract the contents of the zip file into {GamePath}\PAYDAY3\PAYDAY3\Binaries\WinGDK
 
-Additional documentation for installing UE4SS can be found [here](https://docs.ue4ss.com/installation-guide.html)
+Note:
+If you had a previous version of UE4SS installed, make sure to overwrite UE4SS.dll.
+Any mods built for the old version of UE4SS will not work with this one. If you experience crashes on load, it is most likely caused by an outdated mod.
+In the case that you find an outdated mod, contact the mod author to let them know to update the mod to rebuild the mod with this version of RE-UE4SS
 
 ## Creating Lua Mods
 Documentation for UE4SS' Lua API can be found [here](https://docs.ue4ss.com/lua-api.html)

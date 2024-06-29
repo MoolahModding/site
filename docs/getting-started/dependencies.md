@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Dependencies
 :::caution Work in progress
-This page is incomplete.
+This page is nearly complete.
 :::
 
 ## Unreal Editor
@@ -21,8 +21,7 @@ but you will still need most of the Visual Studio tools installed.
 Setup instructions are available at [Jetbrain's documentation](https://www.jetbrains.com/help/rider/Unreal_Engine__Before_You_Start.html) site.
 
 ### Getting the modkit
-The modkit for the full game release is not yet available.
-Check back later this week for a download link and instructions.
+The [Modkit](https://github.com/MoolahModding/MoolahProject) is availible right now and updated for Update 6 ( 1.1.3 )
 
 ## UE4SS
 You can optionally download UE4SS if you wish to create lua mods,

@@ -81,6 +81,6 @@ you must make sure your mod's name comes after the other mod's name alphabetical
 It is best to prefix your mod's name with the letter `z`, ensuring it will load last and overwrite any file you need it to.
 
 ## Viewing PAYDAY 3's PAK files
-In order to view PAYDAY 3's PAK files using FModel, you must first obtain the AES key.
+In order to view the contents of PAYDAY 3's PAK files, you must first obtain the AES key.
 While we cannot distribute the AES key, you can dump it very easily.
 Once the AES key is obtained, you can open PAYDAY 3's files in the program of your choice such as [FModel](https://github.com/4sval/FModel/releases).

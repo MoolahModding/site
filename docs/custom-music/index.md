@@ -326,6 +326,91 @@ Once done, save and repackage your mod, and you'll find your audio replacement p
 | Fort_Stealth_Intensity04_172bpm_80bars_1barPreEntry_v02             | 398614934 |       |
 | Fort_Stealth_Intensity05_172bpm_96bars_v02                          | 1042788038|       |
 
+### Houston Breakout / Courthouse
+| Name                                                                | Wwise ID   | Notes |
+|:--------------------------------------------------------------------|:-----------|:------|
+| Courthouse_Anticipation_Intro_128bpm_v01                            | 430259659  |       |
+| Courthouse_Anticipation_Intro                                       | 1065362376 |       |
+| Courthouse_Assault_v02                                              | 312407827  |       |
+| Courthouse_Control_Loop_128bpm_v02                                  | 11410674   |       |
+| Courthouse_Stealth_01_Intro_4Bars_1BarPreEntry                      | 234023302  |       |
+| Courthouse_Stealth_01_Loop_128bpm                                   | 914430997  |       |
+| Courthouse_Stealth_02_Loop_128bpm                                   | 530372510  |       |
+| Courthouse_Stealth_03_IntroTransition_1bar                          | 448120292  |       |
+| Courthouse_Stealth_03_Loop                                          | 1025309463 |       |
+| Courthouse_Stealth_04_Loop                                          | 971189706  |       |
+| Courthouse_Stealth_05_Loop                                          | 979584544  |       |
+
+### Diamond District / DiamondDistrict
+| Name                                                                | Wwise ID   | Notes |
+|:--------------------------------------------------------------------|:-----------|:------|
+| DIDI_Anticipation_Intro_128bpm_v02                                  | 172597555  |       |
+| Anticipation_Loop_v01                                               | 544198830  |       |
+| DIDI_Assault_Loop                                                   | 398357319  |       |
+| DIDI_Control_Intro_v01                                              | 1054853357 |       |
+| DIDI_Control_Loop_v01                                               | 638538828  |       |
+| DIDI_Stealth_Intensity01_122bpm                                     | 347063877  |       |
+| DIDI_Stealth_Intensity02_122bpm                                     |  6593349   |       |
+| DIDI_Stealth_Intensity03_124bpm                                     | 336168022  |       |
+| DIDI_Stealth_Intensity04_126bpm                                     | 905315979  |       |
+
+### Fear & Greed / Stonk
+| Name                                                                | Wwise ID   | Notes |
+|:--------------------------------------------------------------------|:-----------|:------|
+| Stonk_Anticipation_Intro_128bpm_draft                               | 33951070   |       |
+| Stonk_Anticipation_Loop_128bpm                                      | 293442862  |       |
+| Stonk_Assault_Intro_128bpm                                          | 505056508  |       |
+| Stonk_Assault_A_128bpm_v01                                          | 426403761  |       |
+| Stonk_Assault_A_128bpm_NoSolos_v01                                  | 241933034  |       |
+| Stonk_Assault_B_176bpm_v01                                          | 564962660  |       |
+| Stonk_Assault_B_176bpm_NoSolos_v01                                  | 517413033  |       |
+| Stonk_Control_Loop_128bpm_draft                                     | 518366934  |       |
+| Stonk_Assault_A_Hit                                                 | 49949610   |       |
+| Stonk_Assault_B_Hit                                                 | 913719571  |       |
+| Stonk_Assault_EndingTransition_v01                                  | 759122481  |       |
+| Stonk_Transition_Assault_Fast_to_Control                            | 548714173  |       |
+| Stonk_Transition_Stealth_HighIntensity_to_Control                   | 76544954   |       |
+| Stonk_Transition_BetweenStealths_HighIntensity                      | 943786971  |       |
+| Stonk_Transition_BetweenStealths_LowIntensity                       | 495178131  |       |
+| Stonk_Stealth_01_185bpm                                             | 1072752426 |       |
+| Stonk_Stealth_02_185bpm                                             | 832125972  |       |
+| Stonk_Stealth_03_193bpm                                             | 1063315828 |       |
+| Stonk_Stealth_04_195bpm                                             | 1029949145 |       |
+| Stonk_Stealth_04_noSaxSolo_195bpm                                   | 375862272  |       |
+| Stonk_Stealth_04_alt_195bpm                                         | 271914315  |       |
+| Stonk_Stealth_05_190bpm                                             | 788695024  |       |
+
+### First World Bank / FirstWorldBank
+| Name                                                                | Wwise ID   | Notes |
+|:--------------------------------------------------------------------|:-----------|:------|
+| PD3_One_Anticipation_Intro_124bpm_v02                               | 110118658  |       |
+| PD3_One_Anticipation_Intro_124bpm_v00                               | 666927208  |       |
+| PD3_One_Anticipation_Loop                                           | 727316661  |       |
+| PD3_One_Assault_Intro_v2                                            | 443619234  |       |
+| PD3_One_Assault_v3                                                  | 525230687  |       |
+| PD3_One_Control_v2.2                                                | 291318244  |       |
+| PD3_One_Stealth_01_Intro_124bpm_v00                                 | 112739155  |       |
+| PD3_One_Stealth_01_Loop_124bpm_v00                                  | 969022787  |       |
+| PD3_One_Stealth_02_Loop_124bpm_v00                                  | 162707895  |       |
+| PD3_One_Stealth_03_124bpm                                           | 314486011  |       |
+| PD3_One_Stealth_04_124bpm                                           | 383645512  |       |
+
+### Party Powder / Bust
+| Name                                                                | Wwise ID   | Notes |
+|:--------------------------------------------------------------------|:-----------|:------|
+| Bust_Anticipation_Intro_v01                                         | 116492305  |       |
+| Bust_Anticipation_Intro_V00                                         | 201739312  |       |
+| Bust_Anticipation_Loop_v01                                          | 1036451024 |       |
+| Bust_Assault_v01                                                    | 11724981   |       |
+| Bust_Control_Intro_v01                                              | 942851893  |       |
+| Bust_Control_Loop_v01                                               | 330552149  |       |
+| Bust_Stealth_01_Intro_v01                                           | 700491991  |       |
+| Bust_Stealth_01_Loop_v01                                            | 267881925  |       |
+| Bust_Stealth_02_Loop_v01                                            | 690544182  |       |
+| Bust_Stealth_03_Loop_v01                                            | 85856374   |       |
+| Bust_Stealth_04_Loop_v01                                            | 262505015  |       |
+| Bust_Stealth_05_Loop_v01                                            | 375570814  |       |
+
 ### Other / Menus
 | Name                   | Wwise ID   | Notes                                             |
 |:-----------------------|:-----------|:--------------------------------------------------|

@@ -417,3 +417,26 @@ Once done, save and repackage your mod, and you'll find your audio replacement p
 | AMB_MainMenu_Loop      | 259073131  | Played in the background of the Main Menu         |
 | PD3_MainTheme_Option02 | 1028929042 | Identical to 1033817546, but not used by the game |
 | PD3_MainTheme_Option02 | 1033817546 | Main menu theme used in game                      |
+
+### Looping Custom menu tracks
+The way your 1033817546.ubulk is going to be handled in-game depends on 
+values contained within a .uexp file located in
+
+`PAYDAY3\Content\WwiseAudio\Events\Music\Menus` called `MusicMenu_MainMenu`
+
+Editing the values inside the uexp using a hex editor like HxD lets you set your own duration, loop times and fade in/fade out times.
+
+
+| Offset   | Value Type       | Value Scale  | Function               | Notes
+|:---------|:-----------------|:-------------|:-----------------------|:-------------------------------------------------------------------------------------------------------|
+| 0x146    | float64 (Double) | milliseconds | Music Duration         |    																									   |
+| 0x162    | float32 (Single) | seconds      | Fade in Start          |                                                         										       |
+| 0x16E    | float32 (Single) | seconds      | Fade in End            |                                                                         							   |
+| 0x192    | float32 (Single) | seconds      | Fade out Start         |                                                                                                        |
+| 0x19E    | float32 (Single) | seconds      | Fade out End           |                                                                                                        |
+| 0x221    | float64 (Double) | milliseconds | Music Maximum Duration | You'll typically want to set it to the same value as 0x146                                             |
+| 0x231    | float64 (Double) | milliseconds | Loop Start             | This is where your track will loop from on every subsequent replay                                     |
+| 0x23E    | float64 (Double) | milliseconds | Loop End               | This is where your track will end, you can set it to be lower than the duration of the track if needed |
+
+Once you are done, you can pack both your music file contained in `Media` and this one into your mod, 
+feel free to tinker with it until you're satisfied with it!

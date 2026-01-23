@@ -10,7 +10,7 @@ If PAYDAY 3 upgrades to Unreal Engine 5, this documentation will become obsolete
 :::
 
 ## Intro
-To begin using the Unreal Editor, you must ensure you have version 4.27 installed.
+To begin using the Unreal Editor, you must ensure you have version 4.27.2 installed.
 You can either compile it yourself from source or you can install it through the Epic Games Launcher.
 
 :::note
@@ -29,11 +29,11 @@ You can set this easily by putting the launch option in the steam launch options
 ![Steam Launch Options](assets/steam-launchoptions.png)
 
 ### Cooking
-PAYDAY 3 requires all of its files to be cooked,
+PAYDAY 3 requires all of its files to be cooked before they can be packaged into a mod,
 so you must cook your game files everytime you want to package and test your mod.
 
 You can cook your game files by opening the `File` menu and clicking `Cook Content for Windows`.
-Once cooked, your files will be located at `{UE4ProjectDir}/Saved/Cooked/WindowsNoEditor/`.
+once cooked, your files will be located at `{UE4ProjectDir}/Saved/Cooked/WindowsNoEditor/`.
 
 ![UE4 Cook](assets/ue4-cookoption.png)
 
@@ -44,8 +44,12 @@ In order to package your game files, you must make sure you have [cooked](#cooki
 
 Once cooked, you must copy out all the files your mod replaces or adds, like maps, models, textures, etc.
 When copying you must make sure the folder structure stays the same.
-For example, a custom map at `{UE4ProjectDir}/Saved/Cooked/WindowsNoEditor/PAYDAY3/Maps/CoolMap/CoolMap.umap`
-should be copied to `{MyNewMod_P}/PAYDAY3/Maps/CoolMap/CoolMap.umap`.
+For example, a custom map at `{UE4ProjectDir}/Saved/Cooked/WindowsNoEditor/PAYDAY3/Content/Maps/CoolMap/CoolMap.umap`
+should be copied to `{MyNewMod_P}/PAYDAY3/Content/Maps/CoolMap/CoolMap.umap`.
+
+:::info Reminder
+The mod structure needs to be identical to the Unreal Project structure, as the Mod wont work otherwise.
+:::
 
 Once all your files are copied, you must now package the `MyNewMod_P` with the tool of your choice.
 The tool you use is up to personal preference, but the recommended tool is [repak by trumank](https://github.com/trumank/repak)
@@ -60,8 +64,8 @@ Packed 2 files to PackagingStagingFolder.pak
 4. To verify proper packaging, you can run `repak.exe list MyNewMod_P.pak` and it will list all the paths e.g.:
 ```
 C:\PD3_Modding> repak.exe list MyNewMod_P.pak
-PAYDAY3/Maps/CoolMap/CoolMap.umap
-PAYDAY3/Maps/CoolMap/CoolMap.uexp
+PAYDAY3/Content/Maps/CoolMap/CoolMap.umap
+PAYDAY3/Content/Maps/CoolMap/CoolMap.uexp
 ```
 
 Once packaged, place your pak files in `{InstallFolder}/PAYDAY3/Content/Paks/~mods/` (create ~mods if it does not exist) and your mod should be loaded by PAYDAY 3.
@@ -72,11 +76,11 @@ See the documentation on [Packaging](../packaging) for more info.
 :::
 
 ## Load Order
-Unreal Engine loads files in PAKs in alphabetical order, so if you want your mod to load after another mod,
+Unreal Engine loads PAK-Files in alphabetical order, so if you want your mod to load after another mod,
 you must make sure your mod's name comes after the other mod's name alphabetically.
 It is best to prefix your mod's name with the letter `z`, ensuring it will load last and overwrite any file you need it to.
 
 ## Viewing PAYDAY 3's PAK files
-In order to view PAYDAY 3's PAK files, you must first obtain the AES key.
-While we cannot distribute the AES key ourselves, you can dump it very easily.
+In order to view the contents of PAYDAY 3's PAK files, you must first obtain the AES key.
+While we cannot distribute the AES key, you can dump it very easily.
 Once the AES key is obtained, you can open PAYDAY 3's files in the program of your choice such as [FModel](https://github.com/4sval/FModel/releases).
